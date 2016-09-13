@@ -1,0 +1,73 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+    font-family: "monOpenSans";
+    src: url("./styles/font-face/Typo Open sans/Open sans/OpenSans-Regular.eot"),
+         url("./styles/font-face/Typo Open sans/Open sans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "monEcriturePoint";
+    src: url("./styles/font-face/atomicclockradio/ATOMICCLOCKRADIO.eot"),
+         url("./styles/font-face/atomicclockradio/ATOMICCLOCKRADIO.TTF") format("truetype");
+}
+
+body{
+	font-family: Open sans, monOpenSans;
+	font-weight: normal;
+	background-color:white;
+}
+
+.bckgrdGrisFooter{
+	background-color: #676b6e;
+	border-color: 1px solid #676b6e;
+  width: 1210px;
+  margin:auto;
+}
+
+
+
+/**Le bandeau d'image**/
+.bandeau-container{
+  position:relative;
+  width:100%;
+  height:340px;
+  top:0;
+  left:0;
+}
+.bandeau-container > .img-src{
+    width:100%;
+    height:340px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+
+.main{
+    background-color: #FFFFFF;
+    position: relative;
+      width: 80%;
+      float: none;
+          margin: 0 auto;
+}
+h4{
+    line-height: 1.4em;
+}
+.space-200{
+    height: 200px;
+}
+
+
+@media (max-width: 991px){
+    .img-src{
+       /*
+ background-size: 100%;
+        background-position: top;
+*/
+    }
+
+    .main{
+      width: 100%;
+
+    }
+}

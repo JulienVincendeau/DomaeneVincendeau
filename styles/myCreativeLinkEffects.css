@@ -1,0 +1,33 @@
+/*ma définition perso des effets sur la barre*/
+.cl-effect-14 a::before {
+  color: #4c585d;
+  content: attr(data-hover);
+  position: absolute;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.cl-effect-14 a::before, .cl-effect-14 a::after {
+  background: #4c585d none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  opacity: 0.2;
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  width: 45px;
+
+}
+
+nav a{
+  margin: 15px 0px;
+}
+
+/* on désactive l effet lien sur le logo */
+div#navbar-full div#navbar nav.navbar-default.cl-effect-14 div.container div.navbar-header a::before,
+div#navbar-full div#navbar nav.navbar-default.cl-effect-14 div.container div.navbar-header a::after,
+div#navbar-full div#navbar nav.navbar-default.navbar-transparent.cl-effect-14 div.container div.navbar-header a::before,
+div#navbar-full div#navbar nav.navbar-default.navbar-transparent.cl-effect-14 div.container div.navbar-header a::after{
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  width: inherit;
+}
