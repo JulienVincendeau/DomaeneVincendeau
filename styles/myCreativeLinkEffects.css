@@ -13,8 +13,6 @@
   pointer-events: none;
   position: absolute;
   transition: all 0.3s ease 0s;
-  width: 45px;
-
 }
 
 nav a{
