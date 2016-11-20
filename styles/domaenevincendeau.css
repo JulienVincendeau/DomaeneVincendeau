@@ -15,15 +15,26 @@ body{
 	font-family: Open sans, monOpenSans;
 	font-weight: normal;
 	background-color:white;
+  color: #4c585d;
 }
-
-.bckgrdGrisFooter{
+.footer{
+  padding-top: 18px;
+}
+.sectionFooter{
 	background-color: #676b6e;
 	border-color: 1px solid #676b6e;
-  margin:auto;
+  background-size:cover;
+}
+h4{
+    line-height: 1.4em;
+}
+div{
+  background-color: transparent;
 }
 
-
+.imgBrand{
+  width: 180px;
+}
 
 /**Le bandeau d'image**/
 .bandeau-container{
@@ -39,24 +50,71 @@ body{
     background-position: center center;
 }
 
+/** Mes cadres de pr�sentation dans la page **/
+.sectionCentree{
+  width: 750px;
+	border: 1px solid /*cyan*/ none;
+	margin: auto; /* On peut donc demander � ce que le bloc soit centr� avec auto */
+	clear:both;
+  vertical-align:bottom !important;
+}
+
+/** Les cadres larges type bandeau dans lequel on souhaite y �crire **/
+.bckgrdVagueTurquoise{
+	border: 1px solid white;
+	min-height: 180px;
+	margin: auto; /* On peut donc demander � ce que le bloc soit centr� avec auto */
+	background-image:url("../images/vague turquoise.jpg");
+	background-repeat:no-repeat;
+  background-size:cover;
+	clear:both;
+	img-width:100%;
+}
+
+/** Forc� un test en justify**/
+.fulljustify {
+  text-align: justify;
+}
+.fulljustify:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
 
 .main{
-    background-color: #FFFFFF;
+    background-color: transparent;
     position: relative;
 }
-h4{
-    line-height: 1.4em;
-}
+
 .space-200{
     height: 200px;
 }
 
+#etoilesBckg{
+    background-image:url("../images/etoile_grande.jpg"), url("../images/etoile_petite.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+}
+.liPiedPage{
+  display: inline;
+  list-style: none; /* pour enlever les puces sur IE7 */
+  margin: 10px;
+}
 
-@media (max-width: 991px){
-    .img-src{
-       /*
- background-size: 100%;
-        background-position: top;
-*/
-    }
+@media screen and (max-width: 640px) {
+
+  .bckgrdVagueTurquoise{
+    width:100%;
+    height:auto;
+    background-size:100% 100%;
+  }
+  .imgBrand{
+    width: 120px;
+  }
+  .fulljustify::after {
+    display: block;
+  }
+  div .fulljustify{
+    height:auto !important;
+  }
 }
