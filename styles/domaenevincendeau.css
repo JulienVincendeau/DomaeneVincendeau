@@ -74,6 +74,7 @@ div{
 /** Forc� un test en justify**/
 .fulljustify {
   text-align: justify;
+  height:14px;
 }
 .fulljustify:after {
   content: "";
@@ -101,7 +102,7 @@ div{
   margin: 10px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
 
   .bckgrdVagueTurquoise{
     width:100%;
@@ -111,10 +112,10 @@ div{
   .imgBrand{
     width: 120px;
   }
+  .fulljustify{
+    height:auto !important;
+  }
   .fulljustify::after {
     display: block;
-  }
-  div .fulljustify{
-    height:auto !important;
   }
 }
