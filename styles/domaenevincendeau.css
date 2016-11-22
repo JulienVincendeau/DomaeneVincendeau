@@ -82,6 +82,10 @@ div{
   width: 100%;
 }
 
+.txtGris{
+	color: #4c585d;
+}
+
 .main{
     background-color: transparent;
     position: relative;
@@ -101,6 +105,61 @@ div{
   list-style: none; /* pour enlever les puces sur IE7 */
   margin: 10px;
 }
+
+
+
+/**partie formulaire**/
+form {
+ background-color:transparent;
+ font-family: Open sans, monOpenSans;
+ }
+fieldset {
+ padding:0px 0px 20px;
+ margin-bottom:10px;
+ border:1px solid #d8d8d8;
+ }
+legend {
+ color:#676b6e;
+ font-weight:bold
+ }
+label {
+ margin-top:10px;
+ display:block;
+ }
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+input, textarea, select, option {
+ background-color:transparent;
+ font-family: Open sans, monOpenSans;
+ }
+input, textarea, select {
+	font-family: Open sans, monOpenSans;
+ padding:5px;
+ width:100%;
+ border:1px solid #e9e9e9;
+ border-radius:5px;
+ box-shadow:1px 1px 3px #d4d4d4 inset;
+ }
+select {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit], input[type=reset] {
+ float:right;
+ margin-left:5px;
+ width:auto;
+ background-color:#009cac;
+ color:white;
+ box-shadow:1px 1px 1px #d4d4d4;
+ cursor:pointer;
+ }
+
 
 @media screen and (max-width: 700px) {
 

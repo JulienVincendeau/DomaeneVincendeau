@@ -1,3 +1,70 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="contact@domaenevincendeau.com";
+    $subject=$_POST["subject"];
+    $subjectMail="Contact-Site Web : ".$subject;
+    $subjectMailConfirmation="[Domäne Vincendeau] Votre message: [".$subject."] a bien été envoyé";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $headersConfirmation =  "From: Domäne Vincendeau<$recipient>" . "\r\n";
+    $headersConfirmation .= "Reply-to: ".$recipient. "\r\n";;
+    $headersConfirmation .= "MIME-Version: 1.0\r\n";
+    $headersConfirmation .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    $headersConfirmation .= "Content-Type: image/jpeg; \r\n";
+
+	$mailBody="Nom: $sender\nEmail: $senderEmail\nObjet: $subject\n\n$message";
+
+    $mailBodyConfirmation ="
+		<html>
+		<head>
+		<meta charset=\"ISO-8859-1\">
+		<title>Domäne Vincendeau - Vins fins de Loire : Confirmation envoi message</title>
+
+		</head>
+
+		<body style=\"font-family: Open sans, monOpenSans; font-weight: normal; background-color: white; color:#009cac;\">
+			<br/><br/>
+			<table style=\" width: 710px;\">
+						<tr style=\"vertical-align: baseline;\">
+							<td style=\"padding: 10px;vertical-align: bottom;\">
+								<div >
+										Bonjour,<br/>
+										Merci de votre message. <br/>
+		    							Le Domäne Vincendeau vous apportera une réponse dans les meilleurs délais.<br/>
+		    							Sincères salutations,
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style=\"padding: 10px;vertical-align: bottom;\">
+								<div>
+								<a href=\"http://www.domaenevincendeau.com\" style=\"bottom: 10px;text-decoration: none;\">
+									<img src=\"http://www.domaenevincendeau.com/img/logo.jpg\"
+									alt=\"Domäne Vincendeau\" title=\"Domäne Vincendeau\"
+									style=\"height: 107px; border:none;\" />
+								</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+		</body>
+		</html>
+    ";
+
+	mail($senderEmail, $subjectMailConfirmation, $mailBodyConfirmation, $headersConfirmation);
+
+    mail($recipient, $subjectMail, $mailBody, "From: $sender<$senderEmail>");
+
+
+    $thankYou="<p class='sectionCentreeFondBleu' style='left: -104px; width: 525px; font-size: 14px; position: relative;'>Votre demande a bien &eacute;t&eacute; prise en compte et un email de confirmation vient de vous &ecirc;tre adress&eacute; &agrave; : ".$senderEmail."<br/>Le Dom&auml;ne Vincendeau vous apportera une r&eacute;ponse dans les meilleurs d&eacute;lais.<br/>Merci de votre confiance ! </p>";
+}
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr-FR">
   <head>
@@ -31,7 +98,7 @@
       <meta property="og:site_name" content="Dom&auml;ne Vincendeau" />
 
 
-      <meta name="description" content="Les mentions légales" />
+      <meta name="description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire." />
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -53,6 +120,61 @@
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
 
       <link rel="icon" href="images/favicon.ico" />
+
+
+      <style type="text/css">
+      figure
+      {
+        float: left;
+        margin: 0 0px 0 0;
+        background: transparent;
+        border: 0px solid white;
+        /*-webkit-box-shadow: 0 3px 10px #ccc;
+        -moz-box-shadow: 0 3px 10px #ccc;
+        -o-box-shadow: 0 3px 10px #ccc;*/
+
+        -webkit-transform: rotate(5deg); /* Saf3.1 , Chrome */
+        -moz-transform: rotate(5deg); /* FF3.5 */
+        -o-transform: rotate(5deg); /* Opera 10.5 */
+        -ms-transform: rotate(5deg);   /* Internet Explorer */
+
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         transition: all 1s ease;
+              max-width: 100%;
+
+        position: relative;
+      }
+
+      figcaption
+      {
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        font-style: italic;
+      }
+      figure:hover
+      {
+        -webkit-transform: rotate(-1deg); -moz-transform: rotate(1deg);
+        -o-transform: rotate(1deg); -ms-transform: rotate(1deg);
+
+        webkit-transform:scale(1.50); /* Safari and Chrome */
+          -moz-transform:scale(1.50); /* Firefox */
+          -ms-transform:scale(1.50); /* IE 9 */
+          -o-transform:scale(1.50); /* Opera */
+           transform:scale(1.50);
+             z-index: 99;
+
+       /* -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
+        -o-box-shadow: 0 3px 10px #666; -ms-box-shadow: 0 3px 10px #666;*/
+      }
+
+      </style>
+
+
+
 
     </head>
   <body class="structureEntete">
@@ -87,12 +209,12 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav navbar-right"  style="margin-right: 0px;">
-                   <li><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
+                   <li ><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
                    <li><a href="valeurs.html" class="navbar-link lang" key="linkValeurs">Valeurs</a></li>
                    <li><a href="qualitaet.html" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a></li>
                    <li><a href="vins-anjou.html" class="navbar-link lang" key="linkVins">Vins</a></li>
                    <li><a href="http://shop.domaenevincendeau.com"  target="_blank" class="navbar-link lang" key="linkShop">Shop</a></li>
-                   <li><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
+                   <li class="active"><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
                  </ul>
                </div><!-- /.navbar-collapse -->
              </div><!-- /.container-fluid -->
@@ -111,68 +233,68 @@
     <div class="container col-xs-1 col-sm-1 col-md-1"></div>
     <div class="main col-xs-10 col-sm-10 col-md-10">
        <row class="bandeau-container  col-xs-12 col-sm-12 col-md-12" style="padding-right:0px; padding-left:0px;">
-             <div class="img-src" style="background-image: url('images/Travail Vignes Cheval.jpg')"></div>
+             <div class="img-src" style="background-image: url('images/fond loire.jpg')"></div>
        </row>
 
        <div class="container  col-md-2"></div>
-       <row class="container  col-xs-12 col-sm-12 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;">
-         <div class="txtGris" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;">
-         		<p><b>Domäne Vincendeau</b>
-         			<br/>Domaine viticole, immatriculé au répertoire des numéros individuels d'identification fiscale : numéro de TVA intracommunautaire FR77801680513.
-         			<br/>Les informations recueillies font l'objet d'un traitement informatique destiné à répondre aux demandes de renseignements. Le destinataire des données est le Service Contact du Domäne Vincendeau.
-         			<br/>Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant au
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Domäne Vincendeau
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L'Enclos
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route de Port Godard
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les Lombardières
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49190 Rochefort-sur-Loire
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:contact@domaenevincendeau.com" style="text-decoration:none;" class="txtGris">contact@domaenevincendeau.com</a>
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+33241572115" style="text-decoration:none;" class="txtGris">Téléphone 02 41 57 21 15</a>
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Téléfax 02 41 57 21 15
-         				<br/>
-         				<br/>Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.
-         		</p>
+       <article class="sectionCentree" style="position: relative; z-index: 5; top: -24px;">
+         	<table style="width: 102%;"><tr>
+         	<td>
+       	<div style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; float:left;">
+       		  <p >
+       			Envie de d&eacute;guster nos vins, nous rencontrer, visiter le dom&auml;ne ?<br/>
+       			Nous vous accueillons avec plaisir &amp; sur rendez-vous.<br/>
+       			Pour nous joindre, voici nos coordonn&eacute;es.
+       		</p>
+       		<p><b>Dom&auml;ne Vincendeau</b></p>
+       		<p>
+       			L'Enclos &bull; Route de Port Godard<br/>
+       			Les Lombardi�res 49190 Rochefort sur Loire &bull; France
+       		</p>
 
-         		<p><b>Propriété intellectuelle</b>
-         			<br/>L'ensemble du contenu de ce site est la propriété du Domäne Vincendeau. Les bases de données développées sont la propriété exclusive du Domäne Vincendeau.
-         			<br/>© Copyright 2015 Julien Vincendeau pour le Domäne Vincendeau - Tous droits réservés
-         			<br/>Les logos, marques et visuels cités sur ce site appartiennent à leurs propriétaires respectifs et sont déposés auprès de l'Institut National de la Propriété Industrielle.
-         		</p>
+       		<p style="font-weight: bolder;" >
+       			<div style="font-size:large; color:#009cac;" ><b>fon &bull; fax 02 41 57 21 15</b></div>
+       			<div>mail : contact@domaenevincendeau.com </div>
+       		</p>
+
+       		<p>
+       			A bient&ocirc;t / Bis bald !
+       		</p>
+           </div>
+       	</td>
+       	<td style="text-align: center; ">
+       		<div >
+       		<figure  contenteditable="false" style="height: auto;">
+       		<img src="images/plan-domaene-vincendeauV3-HD-trans.png" alt="Plan d\'accès au Domäne Vincendeau"  contenteditable="false" style="height: 350px; float: left;"/>
+       		<!-- <figcaption contenteditable="false" style="visibility: hidden;">Plan d'acc�s au Dom�ne Vincendeau</figcaption>-->
+       		</figure>
+       		</div>
+       	</td>
+       	</tr>	</table>
+     	</article>
 
 
-         		<p><b>Crédits Photos</b>
-         			<br/>Le Courrier de l'Ouest - Domäne Vincendeau
-         		</p>
+      <section id="thankyou" style="position: relative; z-index: 5; top: 0px;">
+            <?=$thankYou ?>
+      </section>
+      <br/>
+      <section >
+      <article class="sectionCentree" style="position: relative; z-index: 5; top: 0px;">
+              <form method="post" action="contact.php#thankyou">
+                <fieldset  style="width:70%; border: none; float:left;">
+                  <input type="text" required id="nom" name="sender" style="width: 100%;" placeholder="nom" /><br/>
+                  <input type="email" required id="nom" name="senderEmail" style="width: 100%;" placeholder="Adresse email" /><br/>
+                  <input type="text" required id="sujet" name="subject" style="width: 100%;" placeholder="sujet" /><br/>
+                  <textarea rows="" cols="" required id="message"   name="message" placeholder="message" ></textarea><br/>
+                  <input type="submit" name="submit" value="envoyer" />
+                </fieldset>
+              </form>
 
-         		<p><b>Droits de reproduction</b>
-         		<br/>Conformément aux dispositions des articles L. 122-4 et L. 335.2 du Code de la propriété intellectuelle, la reproduction ou la représentation partielle ou totale du site ou de son contenu est interdite sans autorisation écrite et préalable du Dirigeant du Domäne Vincendeau.
-         		</p>
 
-         		<p><b>Liens</b>
-         		<br/>Le site propose des liens vers des sites sur lesquels le Domäne Vincendeau n'exerce aucun contrôle. Le Domäne Vincendeau dégage toute responsabilité quant au contenu de ces sites.
-         		</p>
+             <img src="images/Enseigne Domaene Vincendeau.png" alt="Domäne Vincendeau"  title="Domäne Vincendeau" style="height:195px; float:right;"/>
+      </article>
 
-         		<p><b>Mise en garde générale</b>
-         		<br/>Le Domäne Vincendeau ne saurait être responsable des dommages qui pourraient résulter de l'accès ou de l'utilisation du site, incluant toutes détériorations ou virus qui pourraient infecter votre équipement informatique ou tout autre bien. Bien que s'efforçant raisonnablement de mettre à jour les informations précises publiées sur le site, le Domäne Vincendeau ne saurait être tenue pour responsable de toute erreur ou omission.
-         		</p>
 
-         		<p><b>Modifications des conditions</b>
-         		<br/>Le Domäne Vincendeau se réserve le droit de modifier ou de façon plus générale, d'actualiser les présentes conditions générales à tout moment et sans préavis. C'est pourquoi nous vous invitons à les consulter régulièrement.
-         		</p>
-
-         		<p><b>Création</b>
-         		<br/>Le site a été developpé avec l'outil <a href="https://atom.io/" target="_blank" style="text-decoration: none; color: inherit;">Atom</a>.
-         		<br/>Développeur : <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;">Julien Vincendeau</a>.
-         		<br/>vins-fins-de-loire.html, les effets souris sur les étiquettes inspiré de : Codrops, source http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/
-         		<br/>Le design du site a été créé par <a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a> pour le Domäne Vincendeau.
-         		</p>
-
-         		<p><b>Hébergement</b>
-         		<br/>Les sites www.domaenevincendeau.com, www.domänevincendeau.com et wwww.domainevincendeau.com sont hébergés par la <a href="http://www.ovh.com/fr/hebergement-web/" target="_blank" style="text-decoration: none; color: inherit;">Société OVH</a>.
-         		</p>
-
-             </div>
-       </row>
        <div class="container  col-md-2"></div>
 
     </div>
