@@ -54,6 +54,12 @@
 
       <link rel="icon" href="images/favicon.ico" />
 
+      <!--effet des blocs-->
+      <link rel="stylesheet" type="text/css" href="frameworks/DirectionAwareHoverEffect/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="frameworks/DirectionAwareHoverEffect/css/mycustom.css" />
+      <script src="frameworks/DirectionAwareHoverEffect/js/modernizr.custom.97074.js"></script>
+      <noscript><link rel="stylesheet" type="text/css" href="frameworks/DirectionAwareHoverEffect/css/noJS.css"/></noscript>
+
     </head>
   <body class="structureEntete">
     <!--[if lte IE 8]>
@@ -114,104 +120,97 @@
              <div class="img-src" style="background-image: url('images/Loiregold-auRepos.jpg')"></div>
        </row>
 
-       <div class="container  col-md-2"></div>
-       <row class="container  col-xs-12 col-sm-12 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;">
+       <div class="container  col-md-2 col-sm-1"></div>
+       <row class="container  col-xs-12 col-sm-10 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; width: 100%;">
 
 
-         <div class="[ container text-center ]">
-             <div class="[ row ]">
-                 <div class="[ col-xs-12 ]" style="padding-bottom: 30px;">
-                     <p>This is my attempt to make a wonderful snippet posted by <a target="_blank" href="http://www.bootsnipp.com/maridlcrmn">maridlcrmn</a> a little more responsive. You can find the orginal <a target="_parent" href="http://bootsnipp.com/maridlcrmn/snippets/QbEpr">here</a></p>
-                 </div>
-             </div>
-         </div>
-         <div class="[ container text-center ]">
-         	<div class="[ row ]">
-         		<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
-                     <div class="[ col-xs-4 col-sm-12 ]">
-                         <!-- Nav tabs -->
-                         <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
-                             <li role="presentation" class="active">
-                                 <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
-                                     <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg" />
-                                     <span class="quote"><i class="fa fa-quote-left"></i></span>
-                                 </a>
-                             </li>
-                             <li role="presentation" class="">
-                                 <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
-                                     <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg" />
-                                     <span class="quote"><i class="fa fa-quote-left"></i></span>
-                                 </a>
-                             </li>
-                             <li role="presentation" class="">
-                                 <a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
-                                     <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/128.jpg" />
-                                     <span class="quote"><i class="fa fa-quote-left"></i></span>
-                                 </a>
-                             </li>
-                             <li role="presentation" class="">
-                                 <a href="#wafer" aria-controls="wafer" role="tab" data-toggle="tab">
-                                     <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/waferbaby/128.jpg" />
-                                     <span class="quote"><i class="fa fa-quote-left"></i></span>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                     <div class="[ col-xs-8 col-sm-12 ]">
-                         <!-- Tab panes -->
-                         <div class="tab-content" id="tabs-collapse">
-                             <div role="tabpanel" class="tab-pane fade in active" id="dustin">
-                                 <div class="tab-inner">
-                                     <p class="lead">Etiam tincidunt enim et pretium efficitur. Donec auctor leo sollicitudin eros iaculis sollicitudin.</p>
-                                     <hr>
-                                     <p><strong class="text-uppercase">Dustin Lamont</strong></p>
-                                     <p><em class="text-capitalize"> Senior web developer</em> at <a href="#">Apple</a></p>
-                                 </div>
-                             </div>
+         <section class="container-fluid">
+           <ul id="da-thumbs" class="da-thumbs">
+             <li style="background-color:#;" data-img="imgDiv_CDL">
+               <a >
+                 <img src="images/ETQ-Cremant de Loire Vincendeau.jpg"  />
+                 <div style="background-color:#4c585d;filter : alpha(opacity=80);opacity : 0.8;"><span><strong>Crémant de Loire</strong><br/>**Edition limitée**</span></div>
+               </a>
+             </li>
+    					<li style="background-color:#;" data-img="imgDiv_Raguenet">
+    						<a >
+    							<img src="images/ETQ-Anjou Raguenet.jpg" />
+    							<div style="background-color:#009cac;filter : alpha(opacity=80);opacity : 0.8;"><span><strong>Le Raguenet</strong><br/>Anjou Blanc 2014</span></div>
+    						</a>
+    					</li>
+     					<li style="background-color:#;" data-img="imgDiv_Gold">
+     						<a >
+     							<img src="images/ETQ-Gold.jpg" />
+     							<div style="background-color:#C9A735;filter : alpha(opacity=80);opacity : 0.8;"><span><strong>Gold</strong><br/>Vin de France mousseux</span></div>
+     						</a>
+     					</li>
+     					<li style="background-color:#;" data-img="imgDiv_RDL">
+     						<a >
+     							<img src="images/ETQ-Rosé de Loire.jpg" />
+     							<div style="background-color:#4c585d;filter : alpha(opacity=80);opacity : 0.8;"><span><strong>Rosé de Loire</strong><br/>**Edition limitée**</span></div>
+     						</a>
+     					</li>
+             <li style="background-color:#;" data-img="imgDiv_JusDeRaisin">
+   						<a  >
+   							<img src="images/ETQ-JusDeRaisin2015.png"  />
+   							<div class="aJus" style="background-color:#FD6C9E;filter : alpha(opacity=80);opacity : 0.8;"><span><strong>PUR</strong><br/>Jus de Raisin 2015</span></div>
+   						</a>
+   					</li>
+           </ul>
+         </section>
+       </row>
+       <div class="container  col-sm-1 col-md-2"></div>
 
-                             <div role="tabpanel" class="tab-pane fade" id="daksh">
-                                 <div class="tab-inner">
-                                     <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
-                                     <hr>
-                                     <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
-                                     <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
-                                 </div>
-                             </div>
+       <row class="container  col-xs-12 col-sm-10 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; ">
+         <div class="container  col-md-2 col-sm-1"></div>
+         <section class="sectionDescript container  col-xs-12 col-sm-10 col-md-8" >
+           <div  class="divJus container  col-xs-12 col-sm-6" >
+             <img src="images/ETQ-Cremant de Loire Vincendeau.thumb.png"  />
+          </div>
+           <div  class="divJus container  col-xs-12 col-sm-6 col-md-12"  id="imgDiv_CDL">
+             Nous souhaitons ici mettre à l’honneur l’Appellation d’Origine Contrôlée (AOC) de vin effervescent la plus exigeante de notre vignoble, inspirée par le savoir-faire champenois. Un élevage sur lattes de onze mois minimum pour cet assemblage de « cuvées » d’une seule vigne à plusieurs nuances de terroir schisteux. Toujours du pur Chenin blanc - what else ? - élaboré au Domäne...Avec un habillage sobre et chic...pas de doute, vous avez trouvé le cadeau idéal pour les fêtes. Existe également en Magnum numérotés de 1 à 30.
+             <br /><b>Rendez-vous dès le 1er décembre 2015</b>.
+           </div>
 
-                             <div role="tabpanel" class="tab-pane fade" id="anna">
-                                 <div class="tab-inner">
-                                     <p class="lead">Nullam suscipit ante ac arcu placerat, nec sagittis quam volutpat. Vestibulum aliquam facilisis velit ut ultrices.</p>
-                                     <hr>
-                                     <p><strong class="text-uppercase">Anna Pickard</strong></p>
-                                     <p><em class="text-capitalize"> Master web developer</em> at <a href="#">Intel</a></p>
-                                 </div>
-                             </div>
+           <div  class="divJus container  col-xs-12 col-sm-6" >
+             <img src="images/ETQ-Anjou Raguenet.thumb.png"  />
+          </div>
+           <div  class="divJus container  col-xs-12 col-sm-6 col-md-12"  id="imgDiv_Raguenet">
+             Déjà le deuxième millésime - la verticale devient possible ! ;) Deux parcelles de Chenin blanc, la plus ancienne (années 1940) et la plus jeune (de 10 ans) ont fermenté en parfaite harmonie pour vous offrir un vin d'un terroir remarquable de Rochefort sur Loire. Surplombant le fleuve royal, les racines dans les cailloux, le Raguenet est un lieu charmant...<span style="color:green">Produit en conversion vers l’agriculture biologique</span>.
+             <br /><b>Les deux millésimes sont actuellement en vente au Domäne.</b>
+           </div>
 
-                             <div role="tabpanel" class="tab-pane fade" id="wafer">
-                                 <div class="tab-inner">
-                                     <p class="lead"> Fusce erat libero, fermentum quis sollicitudin id, venenatis nec felis. Morbi sollicitudin gravida finibus.</p>
-                                     <hr>
-                                     <p><strong class="text-uppercase">Wafer Baby</strong></p>
-                                     <p><em class="text-capitalize"> Web designer</em> at <a href="#">Microsoft</a></p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-         	</div>
-         </div>
+           <div  class="divJus container  col-xs-12 col-sm-6" >
+             <img src="images/ETQ-Gold.thumb.png"  />
+          </div>
+           <div class="divJus container  col-xs-12 col-sm-6 col-md-12"  id="imgDiv_Gold">
+             Il nous fallait ÇA pour fêter la nouvelle année : Notre première cuvée de fines bulles élaborée selon la méthode ancestrale. Vendanges manuelles en caissettes à maturité, vinification en gardant une partie des sucres naturels du raisin pour la prise de mousse : Une méthode ancestrale dégorgée tout récemment.
+            <br /><b>Rendez-vous dès février 2015 pour déguster cette essence 100% Chenin non plus blanc mais...doré(e).</b>
+           </div>
 
+           <div  class="divJus container  col-xs-12 col-sm-6" >
+             <img src="images/ETQ-Rosé de Loire.thumb.png"  />
+          </div>
+           <div  class="divJus container  col-xs-12 col-sm-6 col-md-12"  id="imgDiv_RDL">
+             Rosé sec et gourmand, de notre seule parcelle de raisins rouges. Couleur cerise lumineuse....Cocktail harmonieux parfumé de 4 cépages: Cabernet Franc, Gamay Grolleau Noir et..un zeste de Grolleau Gris. Goutez-y pour un été fabuleux ! Edition limitée - contactez-nous pour votre réservation.
+             <b>En vente dès à présent</b>.
+           </div>
+
+           <div  class="divJus container  col-xs-12 col-sm-6" >
+             <img src="images/ETQ-JusDeRaisin2015.thumb.png"  />
+          </div>
+            <div class="divJus container  col-xs-12 col-sm-6 col-md-12" id="imgDiv_JusDeRaisin">
+              Notre première pressée du millésime...toute une émotion. Produit <span style="color:green">en conversion vers l'agriculture biologique</span>. Zéro alcool - 100% plaisir ! Issu de la même vigne que le Crémant de Loire, c’est un concentré de Chenin blanc 100 %. Avec une nouvelle étiquette qui s’intègre très bien dans la gamme de nos Vins & Crémants. A déguster dans les mêmes verres afin de mieux apprécier ses arômes. Du terroir dans ce jus, à déguster sans modération, pour les petits et grands... et toujours bien frais.
+              <br/><b>En vente à partir de mai 2016.</b>
+            </div>
+         </section>
+         <div class="container  col-md-2 col-sm-1"></div>
 
 
-coucou
-"yyyyMMdd"
-http://bootsnipp.com/snippets/featured/fancy-tabs-responsive
-http://tympanus.net/Development/PFold/
-http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/
 
 
        </row>
-       <div class="container  col-md-2"></div>
+       <div class="container  col-sm-1 col-md-2"></div>
 
 
     </div>
@@ -229,8 +228,8 @@ http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/
 
       <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
       <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter">
-        <div class="row  col-sm-2 col-md-2" ></div>
-        <div class="row  col-xs-12 col-sm-7 col-md-7" >
+        <div class="row  col-md-2" ></div>
+        <div class="row  col-xs-12 col-sm-12 col-md-7" >
           <row class="row  col-md-1"  ></row>
           <row class="row  col-md-9  col-xs-12 col-sm-12" >
             <div>
@@ -280,3 +279,23 @@ http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
 <script src="js\detectBrowserLang.js"></script>
+
+
+<!-- effet du menu -->
+<script type="text/javascript" src="frameworks/DirectionAwareHoverEffect/js/jquery.hoverdir.js"></script>
+<script type="text/javascript">
+  $(function() {
+
+    $(' #da-thumbs > li ').each( function() { $(this).hoverdir({
+      hoverDelay : 75
+    }); } );
+
+  });
+</script>
+
+
+<script>
+$("#da-thumbs").on("mouseover mouseout", "li", function () {
+    $("#" + $(this).data("img")).toggle();
+});
+</script>

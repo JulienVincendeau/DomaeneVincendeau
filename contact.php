@@ -119,7 +119,7 @@ if($_POST["submit"]) {
       <!--Mon identité-->
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
 
-      <link rel="icon" href="images/favicon.ico" />
+      <link rel="shortcut icon" href="images/favicon.ico" />
 
 
       <style type="text/css">
@@ -240,17 +240,17 @@ if($_POST["submit"]) {
        <article class="sectionCentree" style="position: relative; z-index: 5; top: -24px;">
          	<table style="width: 102%;"><tr>
          	<td>
-       	<div style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; float:left;">
+       	    <div style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; float:left;">
        		  <p >
        			Envie de d&eacute;guster nos vins, nous rencontrer, visiter le dom&auml;ne ?<br/>
        			Nous vous accueillons avec plaisir &amp; sur rendez-vous.<br/>
        			Pour nous joindre, voici nos coordonn&eacute;es.
-       		</p>
-       		<p><b>Dom&auml;ne Vincendeau</b></p>
-       		<p>
-       			L'Enclos &bull; Route de Port Godard<br/>
-       			Les Lombardi�res 49190 Rochefort sur Loire &bull; France
-       		</p>
+       		  </p>
+       		  <p><b>Dom&auml;ne Vincendeau</b></p>
+       		  <p>
+       			      L'Enclos &bull; Route de Port Godard<br/>
+       			       Les Lombardières 49190 Rochefort sur Loire &bull; France
+       		  </p>
 
        		<p style="font-weight: bolder;" >
        			<div style="font-size:large; color:#009cac;" ><b>fon &bull; fax 02 41 57 21 15</b></div>

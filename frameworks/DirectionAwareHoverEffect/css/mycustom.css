@@ -1,0 +1,59 @@
+
+.da-thumbs li a, .da-thumbs li a img {
+    display: block;
+    height: 170px;
+    position: relative;
+    width: 170px;
+}
+
+.divJus {
+    display: none;
+}
+
+.da-thumbs{
+  height: auto;
+}
+.sectionDescript{
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  float: left;
+  margin: 5px;
+  padding: 8px;
+  position: relative;
+  min-height: 120px;
+  width: 100%;
+  margin-bottom: 25px; margin-top: 10px;
+  display: flex;
+  margin-top: 15vh; /* poussé de la moitié de hauteur de viewport */
+transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .divJus {
+      display: unset;
+      padding: 15px 15px 15px 15px  ;
+  }
+
+ ul#da-thumbs.da-thumbs li{
+   display: none;
+ }
+ .sectionDescript{
+   background: #fff none repeat scroll 0 0;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+   float: left;
+   margin: 5px;
+   padding: 8px;
+   position: unset;
+   min-height: 120px;
+   width: 100%;
+   margin-bottom: 25px; margin-top: 10px;
+   display: unset;
+   margin-top: unset; /* poussé de la moitié de hauteur de viewport */
+ transform: unset; /* tiré de la moitié de sa propre hauteur */
+ }
+  .divJus.container img{
+    width: 180px;
+  }
+}

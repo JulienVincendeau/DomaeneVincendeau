@@ -62,7 +62,7 @@ div{
 /** Les cadres larges type bandeau dans lequel on souhaite y �crire **/
 .bckgrdVagueTurquoise{
 	border: 1px solid white;
-	min-height: 180px;
+	min-height: 200px;
 	margin: auto; /* On peut donc demander � ce que le bloc soit centr� avec auto */
 	background-image:url("../images/vague turquoise.jpg");
 	background-repeat:no-repeat;
@@ -161,7 +161,7 @@ input[type=submit], input[type=reset] {
  }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
 
   .bckgrdVagueTurquoise{
     width:100%;
@@ -171,10 +171,14 @@ input[type=submit], input[type=reset] {
   .imgBrand{
     width: 120px;
   }
-  .fulljustify{
+}
+@media screen and (max-width: 1800px) {
+  .fulljustify {
+    text-align: unset;
     height:auto !important;
   }
-  .fulljustify::after {
-    display: block;
+  .fulljustify:after {
+    display: unset;
+    width: auto !important;
   }
 }
