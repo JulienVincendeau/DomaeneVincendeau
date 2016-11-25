@@ -212,7 +212,7 @@ if($_POST["submit"]) {
                    <li ><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
                    <li><a href="valeurs.html" class="navbar-link lang" key="linkValeurs">Valeurs</a></li>
                    <li><a href="qualitaet.html" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a></li>
-                   <li><a href="vins-anjou.html" class="navbar-link lang" key="linkVins">Vins</a></li>
+                   <li><a href="vins-fins-de-loire.html" class="navbar-link lang" key="linkVins">Vins</a></li>
                    <li><a href="http://shop.domaenevincendeau.com"  target="_blank" class="navbar-link lang" key="linkShop">Shop</a></li>
                    <li class="active"><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
                  </ul>
@@ -237,7 +237,7 @@ if($_POST["submit"]) {
        </row>
 
        <div class="container  col-md-2"></div>
-       <article class="sectionCentree" style="position: relative; z-index: 5; top: -24px;">
+       <article class="container   col-xs-12 col-sm-10 col-md-8" style="position: relative; z-index: 5; top: -24px;">
          	<table style="width: 102%;"><tr>
          	<td>
        	    <div style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; float:left;">
@@ -303,13 +303,6 @@ if($_POST["submit"]) {
   </main>
 
   <footer class="footer col-md-12    col-xs-12 col-sm-12" >
-    <p style="position: fixed;bottom:1%;left:1%;">
-		    <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a>
-	  </p>
-    <p style="position: fixed;bottom:6%;left:1%;">
-      <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
-    </p>
-
       <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
       <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter">
         <div class="row  col-sm-2 col-md-2" ></div>
@@ -322,7 +315,7 @@ if($_POST["submit"]) {
               <p  class="fulljustify" style="color:white;" >	L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
                 <p class="fulljustify" style="color:white;"   ><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;">Julien Vincendeau</a></p>
                 <p class="fulljustify" style="color:white;" >L'abus d'alcool est dangereux pour la santé, sachez le consommer avec modération</p>
-                <p class="fulljustify" style="color:white;" >Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-anjou.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="http://shop.domaenevincendeau.com"  target="_blank" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkShop">Shop</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
+                <p class="fulljustify" style="color:white;" >Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-fins-de-loire" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="http://shop.domaenevincendeau.com"  target="_blank" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkShop">Shop</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
 
                 </p>
             </div>

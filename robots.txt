@@ -1,4 +1,8 @@
 # robotstxt.org
 
 User-agent: *
-Disallow:
+Crawl-delay: 10
+
+# SiteMap
+Sitemap: http://www.domaenevincendeau.com/sitemap.xml
+Sitemap: http://domaenevincendeau.com/sitemap2.xml
