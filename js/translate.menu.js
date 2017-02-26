@@ -6,6 +6,7 @@ var arrLang={
     'linkVins' : 'Wines',
     'linkShop' : 'Shop',
     'linkContact': 'Contact',
+    'linkPresse': 'Echo',
     'linkMentions': 'General Conditions'
   },
   'fr' : {
@@ -15,6 +16,7 @@ var arrLang={
     'linkVins' : 'Vins',
     'linkShop' : 'Shop',
     'linkContact': 'Contact',
+    'linkPresse': 'Echo',
     'linkMentions': 'Mentions légales'
   },
   'de' : {
@@ -24,6 +26,7 @@ var arrLang={
     'linkVins' : 'Wein',
     'linkShop' : 'Shop',
     'linkContact': 'Kontakt',
+    'linkPresse': 'Echo',
     'linkMentions': 'Impressums'
   }
 };
