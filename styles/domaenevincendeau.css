@@ -24,6 +24,7 @@ body{
 	background-color: #676b6e;
 	border-color: 1px solid #676b6e;
   background-size:cover;
+  padding-top: 15px;
 }
 h4{
     line-height: 1.4em;
@@ -35,6 +36,17 @@ div{
 .imgBrand{
   width: 180px;
 }
+
+.fullwidth{
+   text-align: justify;
+   height: 14px;
+}
+.fullwidth:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
 
 /**Le bandeau d'image**/
 .bandeau-container{
@@ -64,22 +76,9 @@ div{
 	border: 1px solid white;
 	min-height: 200px;
 	margin: auto; /* On peut donc demander � ce que le bloc soit centr� avec auto */
-	background-image:url("../images/vague turquoise.jpg");
-	background-repeat:no-repeat;
-  background-size:cover;
+	background :url("../images/vague turquoise.jpg") no-repeat;
+  background-size: 100% 100%;
 	clear:both;
-	img-width:100%;
-}
-
-/** Forc� un test en justify**/
-.fulljustify {
-  text-align: justify;
-  height:14px;
-}
-.fulljustify:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
 }
 
 .txtGris{
