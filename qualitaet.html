@@ -79,7 +79,7 @@
                  </button>
                  <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
                     <div class="logo" >
-                       <img src="images\logo-mail.png" class="imgBrand">
+                       <img src="images\logo-mail.png" class="imgBrand"   id='Logo'>
                     </div>
                     <div class="brand">  </div>
                  </a>
@@ -193,3 +193,23 @@ Coming soon.. <br/>
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
 <script src="js\detectBrowserLang.js"></script>
+
+<script>
+window.onscroll = function() {
+  growShrinkLogo()
+};
+
+function growShrinkLogo() {
+  var Logo = document.getElementById("Logo")
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    Logo.style.width = '90px';
+    Logo.style.position = "fixed";
+    Logo.style.left = "10px";
+    Logo.className = "imgBrand";
+  } else {
+    Logo.style.width = '180px';
+    Logo.style.position = "absolute";
+    Logo.className = "imgBrand";
+  }
+}
+</script>

@@ -35,6 +35,7 @@ div{
 
 .imgBrand{
   width: 180px;
+  z-index: 99;
 }
 
 .fullwidth{
