@@ -35,7 +35,14 @@ div{
 
 .imgBrand{
   width: 180px;
-  z-index: 99;
+  position : absolute;
+  background-color: transparent;
+}
+.imgBrandScrolled{
+  width: 90px;
+  position : fixed;
+  left : 10px;
+  background-color: red;
 }
 
 .fullwidth{
@@ -162,7 +169,6 @@ input[type=submit], input[type=reset] {
 
 
 @media screen and (max-width: 850px) {
-
   .bckgrdVagueTurquoise{
     width:100%;
     height:auto;
@@ -171,14 +177,12 @@ input[type=submit], input[type=reset] {
   .imgBrand{
     width: 120px;
   }
+  .imgBrandScrolled{
+    display: none;
+  }
 }
 @media screen and (max-width: 1800px) {
-  .fulljustify {
-    text-align: unset;
-    height:auto !important;
-  }
-  .fulljustify:after {
-    display: unset;
-    width: auto !important;
+  .imgBrandScrolled{
+    display: none;
   }
 }

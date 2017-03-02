@@ -293,13 +293,8 @@ window.onscroll = function() {
 function growShrinkLogo() {
   var Logo = document.getElementById("Logo")
   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    Logo.style.width = '90px';
-    Logo.style.position = "fixed";
-    Logo.style.left = "10px";
-    Logo.className = "imgBrand";
+    Logo.className="imgBrandScrolled"
   } else {
-    Logo.style.width = '180px';
-    Logo.style.position = "absolute";
     Logo.className = "imgBrand";
   }
 }
