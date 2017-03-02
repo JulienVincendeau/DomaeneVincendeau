@@ -42,7 +42,6 @@ div{
   width: 90px;
   position : fixed;
   left : 10px;
-  background-color: red;
 }
 
 .fullwidth{
@@ -178,6 +177,9 @@ input[type=submit], input[type=reset] {
     width: 120px;
   }
   .imgBrandScrolled{
+    display: none;
+  }
+  .notShortScreen{
     display: none;
   }
 }

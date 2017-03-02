@@ -26,11 +26,11 @@
   padding: 8px;
   position: relative;
   min-height: 120px;
-  width: 100%;
+  width: 60%;
   margin-bottom: 25px; margin-top: 10px;
   display: flex;
   margin-top: 15vh; /* poussé de la moitié de hauteur de viewport */
-transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
 }
 
 

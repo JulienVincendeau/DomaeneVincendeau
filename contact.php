@@ -234,7 +234,7 @@ if($_POST["submit"]) {
     <div class="container col-xs-1 col-sm-1 col-md-1"></div>
     <div class="main col-xs-10 col-sm-10 col-md-10">
        <row class="bandeau-container  col-xs-12 col-sm-12 col-md-12" style="padding-right:0px; padding-left:0px;">
-             <div class="img-src" style="background-image: url('images/fond loire.jpg')"></div>
+             <div class="img-src" style="background-image: url('images/watching_haut.png');  background-position:center bottom;"></div>
        </row>
 
        <div class="container  col-md-2"></div>
@@ -306,7 +306,7 @@ if($_POST["submit"]) {
 
   <footer class="footer col-md-12    col-xs-12 col-sm-12" >
       <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter">
+      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter img-src" style="background-image: url('images/watching_bas.png');  background-position:center top;">
         <div class="row  col-md-2" ></div>
         <div class="row  col-xs-12 col-sm-12 col-md-10" >
           <row class="row  col-md-1"  ></row>
