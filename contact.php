@@ -239,7 +239,7 @@ if($_POST["submit"]) {
 
        <div class="container  col-md-2"></div>
        <article class="container   col-xs-12 col-sm-10 col-md-8" style="position: relative; z-index: 5; top: -24px;">
-         	<table style="width: 102%;"><tr>
+         	<table style="width: 102%;margin-top: 35px;"><tr>
          	<td>
        	    <div style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; float:left;">
        		  <p >
@@ -256,7 +256,7 @@ if($_POST["submit"]) {
        		<p style="font-weight: bolder;" >
        			<div style="font-size:large; color:#009cac;" ><b>fon &bull; fax 02 41 57 21 15</b></div>
        			<div>mail : contact@domaenevincendeau.com </div>
-            <div>
+            <div >
                 <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a> &nbsp;
                 <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
             </div>
@@ -309,7 +309,7 @@ if($_POST["submit"]) {
       <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter img-src" style="background-image: url('images/watching_bas.png');  background-position:center top;">
         <div class="row  col-md-2" ></div>
         <div class="row  col-xs-12 col-sm-12 col-md-10" >
-          <row class="row  col-md-1"  ></row>
+          <row class="row  col-md-1 notShortScreen"  ></row>
           <row class="row  col-md-10  col-xs-12 col-sm-12">
               <p style="color:white;">Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
               <p style="color:white;">L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
@@ -317,7 +317,7 @@ if($_POST["submit"]) {
               <p style="color:white;">L'abus d'alcool est dangereux pour la santé, sachez le consommer avec modération</p>
               <p style="color:white;" id="footer-menu">Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-fins-de-loire.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="http://shop.domaenevincendeau.com"  target="_blank" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkShop">Shop</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="presse.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkPresse">Echo</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
           </row>
-            <row class="row  col-md-1"  ></row>
+            <row class="row  col-md-1 notShortScreen"   ></row>
         </div>
       </div>
       <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>

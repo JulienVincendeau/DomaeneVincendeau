@@ -114,6 +114,8 @@ div{
 
 
 
+
+
 /**partie formulaire**/
 form {
  background-color:transparent;
@@ -166,7 +168,6 @@ input[type=submit], input[type=reset] {
  cursor:pointer;
  }
 
-
 @media screen and (max-width: 850px) {
   .bckgrdVagueTurquoise{
     width:100%;
@@ -181,6 +182,12 @@ input[type=submit], input[type=reset] {
   }
   .notShortScreen{
     display: none;
+  }
+  /**Affichage des liens reseaux sociaux**/
+  .reseauSociaux{
+    position: fixed;
+    bottom: 10%;
+    left: 0px;
   }
 }
 @media screen and (max-width: 1800px) {
