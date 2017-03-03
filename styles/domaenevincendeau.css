@@ -177,6 +177,9 @@ input[type=submit], input[type=reset] {
   .imgBrand{
     width: 120px;
   }
+}
+
+@media screen and (max-width: 640px) {
   .imgBrandScrolled{
     display: none;
   }
@@ -190,8 +193,6 @@ input[type=submit], input[type=reset] {
     left: 0px;
   }
 }
+
 @media screen and (max-width: 1800px) {
-  .imgBrandScrolled{
-    display: none;
-  }
 }
