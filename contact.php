@@ -69,7 +69,7 @@ if($_POST["submit"]) {
 <html class="no-js" lang="fr-FR">
   <head>
       <meta charset="utf-8">
-      <title>Dom&auml;ne Vincendeau - vins fins de Loire</title>
+      <title>Contacter le Dom&auml;ne Vincendeau</title>
       <meta http-equiv="keywords" content="Domaene, Domaine, Domane, Vincendeau, Vins, Cr&eacute;mant, Bulle, Blanc, Ros&eacute;, Jus de raisin, Loire, Anjou, fins, qualit&eacute;s, agriculture, biologique, bio, vigne, ballade, B&eacute;huard, Lombardières, Maine-et-Loire, France, Angers" />
       <meta name="author" content="Julien Vincendeau" />
       <meta name="copyright" content="&copy; Dom&auml;ne Vincendeau" />
@@ -98,7 +98,7 @@ if($_POST["submit"]) {
       <meta property="og:site_name" content="Dom&auml;ne Vincendeau" />
 
 
-      <meta name="description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire." />
+      <meta name="description" content="Envie de d&eacute;guster nos vins, nous rencontrer, visiter le dom&auml;ne ? Nous vous accueillons avec plaisir &amp; sur rendez-vous." />
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
