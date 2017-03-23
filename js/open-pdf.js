@@ -10,13 +10,14 @@
 $(function(){
     $('.view-pdf').on('click',function(){
         var pdf_link = $(this).attr('href');
-        //var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
-        //var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'
-        var iframe = '<object type="application/pdf" data="'+pdf_link+'" width="100%" height="800" allowfullscreen>No Support</object>'
+        //var iframe = '<div class="iframe-container"  width="100%" height="800" allowfullscreen><iframe src="'+pdf_link+'"></iframe></div>'
+        //var iframe = '<object data="'+pdf_link+'" type="application/pdf" width="100%" height="800" allowfullscreen><embed src="'+pdf_link+'" type="application/pdf" /></object>'
+        var iframe = '<object type="application/pdf" data="'+pdf_link+'" width="100%" height="800" allowfullscreen>Nous rencontrons des difficultés pour ouvrir ce PDF</object>'
         $.createModal({
             message: iframe,
             closeButton:false,
-            scrollable:false
+            scrollable:false,
+            title: '<a href="'+pdf_link+'" download>Télécharger le document</a>'
         });
         return false;
     });
@@ -26,8 +27,8 @@ $(function(){
     $('.view-site').on('click',function(){
         var pdf_link = $(this).attr('href');
         //var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
-        //var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'
-        var iframe = '<object type="text/html" data="'+pdf_link+'" width="100%" height="800" allowfullscreen>No Support</object>'
+        //var iframe = '<object data="'+pdf_link+'" type="text/html"  width="100%" height="800" allowfullscreen><embed src="'+pdf_link+'" type="text/html" /></object>'
+        var iframe = '<object type="text/html" data="'+pdf_link+'" width="100%" height="800" allowfullscreen>Nous rencontrons des difficultés pour ouvrir ce site Web</object>'
         $.createModal({
             message: iframe,
             closeButton:false,
