@@ -54,6 +54,9 @@
 
       <link rel="shortcut icon" href="images/favicon.ico" />
 
+      <!-- modal -->
+      <link rel="stylesheet" type="text/css" href="styles\modal-blur.css" />
+
     </head>
   <body class="structureEntete">
     <!--[if lte IE 8]>
@@ -155,6 +158,25 @@ Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologiq
     </div>
 
     <div class="container col-xs-1 col-sm-1 col-md-1"></div>
+
+
+
+    <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Modal with blur effect
+    </button>-->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+            <br><br><br /><br />
+             <img src="images\DomaeneDay_21Mai2017.png" alt="Portes Ouvertes au Domäne Vincendeau" style="width:100%;">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer col-md-12    col-xs-12 col-sm-12" >
@@ -209,6 +231,24 @@ Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologiq
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
 <script src="js\detectBrowserLang.js"></script>
+
+<!--ouverture du Modal-->
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
+<!--fermeture modal-->
+<script type="text/javascript">
+  $("body").on("click", ".modal-dialog", function(e) {
+       if ($(e.target).hasClass('modal-dialog')) {
+           var hidePopup = $(e.target.parentElement).attr('id');
+           $('#' + hidePopup).modal('hide');
+       }
+   });
+</script>
+
+
 
 <script>
 window.onscroll = function() {
