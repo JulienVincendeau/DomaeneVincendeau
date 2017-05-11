@@ -240,11 +240,8 @@ Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologiq
 </script>
 <!--fermeture modal-->
 <script type="text/javascript">
-  $("body").on("click", ".modal-dialog", function(e) {
-       if ($(e.target).hasClass('modal-dialog')) {
-           var hidePopup = $(e.target.parentElement).attr('id');
-           $('#' + hidePopup).modal('hide');
-       }
+  $("body").on("click", ".modal", function(e) {
+           $('#myModal').modal('hide');
    });
 </script>
 
