@@ -43,7 +43,7 @@ if($_POST["submit"]) {
 							<td style=\"padding: 10px;vertical-align: bottom;\">
 								<div>
 								<a href=\"http://www.domaenevincendeau.com\" style=\"bottom: 10px;text-decoration: none;\">
-									<img src=\"http://www.domaenevincendeau.com/img/logo.jpg\"
+									<img src=\"http://www.domaenevincendeau.com/images/logo-mail.png\"
 									alt=\"Domäne Vincendeau\" title=\"Domäne Vincendeau\"
 									style=\"height: 107px; border:none;\" />
 								</a>
@@ -79,7 +79,7 @@ if($_POST["submit"]) {
       <!-- Schema.org markup for Google+ -->
       <meta itemprop="name" content="#Crémants et #Vins fins de #Loire depuis 2014 ">
       <meta itemprop="description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire. ">
-      <meta itemprop="image" content="http://www.domaenevincendeau.com/images/logo.jpg">
+      <meta itemprop="image" content="http://www.domaenevincendeau.com/images/logo-mail.jpg">
 
       <!-- Twitter Card data -->
       <meta name="twitter:card" content="summary">
@@ -87,13 +87,13 @@ if($_POST["submit"]) {
       <meta name="twitter:title" content="#Crémants et #Vins fins de #Loire depuis 2014 ">
       <meta name="twitter:description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire. ">
       <meta name="twitter:creator" content="@julienv1cendeau">
-      <meta name="twitter:image" content="http://www.domaenevincendeau.com/images/logo.jpg">
+      <meta name="twitter:image" content="http://www.domaenevincendeau.com/images/logo-mail.jpg">
 
       <!-- Open Graph data -->
       <meta property="og:title" content="#Crémants et #Vins fins de #Loire depuis 2014 " />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="http://www.domaenevincendeau.com" />
-      <meta property="og:image" content="http://www.domaenevincendeau.com/images/logo.jpg" />
+      <meta property="og:image" content="http://www.domaenevincendeau.com/images/logo-mail.jpg" />
       <meta property="og:description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire. " />
       <meta property="og:site_name" content="Dom&auml;ne Vincendeau" />
 
