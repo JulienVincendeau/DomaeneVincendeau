@@ -1,18 +1,8 @@
 @CHARSET "ISO-8859-1";
-
-@font-face {
-    font-family: "monOpenSans";
-    src: url("./styles/font-face/Typo Open sans/Open sans/OpenSans-Regular.eot"),
-         url("./styles/font-face/Typo Open sans/Open sans/OpenSans-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "monEcriturePoint";
-    src: url("./styles/font-face/atomicclockradio/ATOMICCLOCKRADIO.eot"),
-         url("./styles/font-face/atomicclockradio/ATOMICCLOCKRADIO.TTF") format("truetype");
-}
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
 
 body{
-	font-family: Open sans, monOpenSans;
+	font-family:'Open Sans', sans-serif;
 	font-weight: normal;
 	background-color:white;
   color: #4c585d;
@@ -102,7 +92,7 @@ div{
 }
 
 #etoilesBckg{
-    background-image:url("../images/etoile_grande.jpg"), url("../images/etoile_petite.jpg");
+    /*background-image:url("../images/etoile_grande.jpg"), url("../images/etoile_petite.jpg");*/
     background-position: right bottom, left top;
     background-repeat: no-repeat;
 }
