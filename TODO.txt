@@ -1,0 +1,4 @@
+Nuage de mots
+https://www.zingchart.com/docs/chart-types/wordcloud/
+http://mistic100.github.io/jQCloud/demo.html
+https://bootsnipp.com/snippets/featured/js-typewriter-text-animation
