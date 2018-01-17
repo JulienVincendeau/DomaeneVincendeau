@@ -7,6 +7,7 @@ var arrLang={
     'linkShop' : 'Shop',
     'linkContact': 'Contact',
     'linkPresse': 'Echo',
+    'linkEvents': 'Events',
     'linkMentions': 'General Conditions'
   },
   'fr' : {
@@ -17,6 +18,7 @@ var arrLang={
     'linkShop' : 'Shop',
     'linkContact': 'Contact',
     'linkPresse': 'Echo',
+    'linkEvents': 'Events',
     'linkMentions': 'Mentions légales'
   },
   'de' : {
@@ -27,6 +29,7 @@ var arrLang={
     'linkShop' : 'Shop',
     'linkContact': 'Kontakt',
     'linkPresse': 'Echo',
+    'linkEvents': 'Events',
     'linkMentions': 'Impressums'
   }
 };

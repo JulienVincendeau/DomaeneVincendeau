@@ -1,9 +1,75 @@
+<?php
+if($_POST["submit"]) {
+    $recipient="event@domaenevincendeau.com";
+    $subjectMail="Domäne Night 2018";
+    $subjectMailConfirmation="[Domäne Vincendeau] Votre demande de réservation à bien été prise en compte";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $nbinvit=$_POST["invitation"];
+    $message=$_POST["message"];
+
+    $headersConfirmation =  "From: Domäne Vincendeau<$recipient>" . "\r\n";
+    $headersConfirmation .= "Reply-to: ".$recipient. "\r\n";;
+    $headersConfirmation .= "MIME-Version: 1.0\r\n";
+    $headersConfirmation .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    $headersConfirmation .= "Content-Type: image/jpeg; \r\n";
+
+	  $mailBody="Nom: $sender\nEmail: $senderEmail\nNb invit: $nbinvit\n\n$message";
+
+    $mailBodyConfirmation ="
+		<html>
+		<head>
+		<meta charset=\"ISO-8859-1\">
+		<title>Domäne Vincendeau - Vins fins de Loire : Confirmation envoi message</title>
+
+		</head>
+
+		<body style=\"font-family: Open sans, monOpenSans; font-weight: normal; background-color: white; color:#009cac;\">
+			<br/><br/>
+			<table style=\" width: 710px;\">
+						<tr style=\"vertical-align: baseline;\">
+							<td style=\"padding: 10px;vertical-align: bottom;\">
+								<div >
+										Bonjour,<br/>
+										Votre demande de réservation pour la Domäne Night 2018 est bien prise en compte.<br/>
+                    Rendez-vous le 27 janvier 2018 à partir de 18h00<br/>
+                    au <a href=\"https://www.google.fr/maps/place/Dom%C3%A4ne+Vincendeau/@47.375686,-0.6421182,15z/data=!4m5!3m4!1s0x0:0x5a51d904989bb487!8m2!3d47.375686!4d-0.6421182\">Domäne Vincendeau.</a>
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style=\"padding: 10px;vertical-align: bottom;\">
+								<div>
+								<a href=\"http://www.domaenevincendeau.com\" style=\"bottom: 10px;text-decoration: none;\">
+									<img src=\"http://www.domaenevincendeau.com/images/logo-mail.png\"
+									alt=\"Domäne Vincendeau\" title=\"Domäne Vincendeau\"
+									style=\"height: 107px; border:none;\" />
+								</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+		</body>
+		</html>
+    ";
+
+	mail($senderEmail, $subjectMailConfirmation, $mailBodyConfirmation, $headersConfirmation);
+
+    mail($recipient, $subjectMail, $mailBody, "From: $sender<$senderEmail>");
+
+
+    $thankYou="<p class='sectionCentreeFondBleu' style='left: -104px; width: 525px; font-size: 14px; position: relative;'>Votre demande a bien &eacute;t&eacute; prise en compte et un email de confirmation vient de vous &ecirc;tre adress&eacute; &agrave; : ".$senderEmail."</p>";
+}
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr-FR">
   <head>
       <meta charset="utf-8">
-      <title>Dom&auml;ne Vincendeau - Crémants &amp; Vins fins de Loire</title>
-      <meta http-equiv="keywords" content="Domaene, Domaine, Domane, Vincendeau, Vins, Cr&eacute;mant, Bulle, Blanc, Ros&eacute;, Jus de raisin, Loire, Anjou, fins, qualit&eacute;s, agriculture, biologique, bio, vigne, ballade, B&eacute;huard, Lombardi&ecirc;res, Maine-et-Loire, France, Angers" />
+      <title>Domäne Night 2018</title>
+      <meta http-equiv="keywords" content="Doomäne, Night, Portes ouvertes, Domaene, Domaine, Domane, Vincendeau, Vins, Cr&eacute;mant, Bulle, Blanc, Ros&eacute;, Jus de raisin, Loire, Anjou, fins, qualit&eacute;s, agriculture, biologique, bio, vigne, ballade, B&eacute;huard, Lombardières, Maine-et-Loire, France, Angers" />
       <meta name="author" content="Julien Vincendeau" />
       <meta name="copyright" content="&copy; Dom&auml;ne Vincendeau" />
       <meta http-equiv="Content-Language" content="fr-FR" />
@@ -31,7 +97,7 @@
       <meta property="og:site_name" content="Dom&auml;ne Vincendeau" />
 
 
-      <meta name="description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire." />
+      <meta name="description" content="Portes Ouvertes au Dom&auml;ne Vincendeau - Domäne Night 2018" />
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -54,8 +120,6 @@
 
       <link rel="shortcut icon" href="images/favicon.ico" />
 
-      <!-- modal -->
-      <link rel="stylesheet" type="text/css" href="styles\modal-blur.css" />
 
     </head>
   <body class="structureEntete">
@@ -90,12 +154,12 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav navbar-right"  style="margin-right: 0px;">
-                   <li class="active"><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
+                   <li><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
                    <li><a href="valeurs.html" class="navbar-link lang" key="linkValeurs">Valeurs</a></li>
                    <li><a href="qualitaet.html" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a></li>
                    <li><a href="vins-fins-de-loire.html" class="navbar-link lang" key="linkVins">Vins</a></li>
                    <li><a href="presse.html" class="navbar-link lang" key="linkPresse">Echo</a></li>
-                   <li><a href="event.php" class="navbar-link lang" key="linkEvents">Events</a></li>
+                   <li class="active"><a href="event.php" class="navbar-link lang" key="linkEvents">Events</a></li>
                    <li><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
                  </ul>
                </div><!-- /.navbar-collapse -->
@@ -114,81 +178,60 @@
 
     <div class="container col-xs-1 col-sm-1 col-md-1"></div>
     <div class="main col-xs-10 col-sm-10 col-md-10">
-       <row class="bandeau-container  col-xs-12 col-sm-12 col-md-12" style="padding-right:0px; padding-left:0px;">
-             <div class="img-src" style="background-image: url('images/Le_Vau._Jocsselin_Clair.jpeg'); background-position:center top;"></div>
-       </row>
+
+       <div class="container  col-md-2"></div>
+       <row class="container  col-xs-12 col-sm-12 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;padding-top:15px;">
+         <div class="txtGris" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;">
+           <section  class="container  col-xs-12 col-sm-12 col-md-12"  id="thankyou" style="position: relative; z-index: 5; top: 0px;">
+                 <?=$thankYou ?>
+           </section>
+           <row class="container  col-xs-12 col-sm-6 col-md-6" >
+             <p>
+                <img src="images\Invitation DomäneNight 2018_1.jpg"  style="width: 30em;"\>
+             </p>
+             <p style="z-index: 10">
+                <form method="post" action="event.php#thankyou"  style="z-index: 10">
+                  <fieldset  style="width:89%; border: none; float:left;">
+                    <input type="text" required id="sender" name="sender" style="width: 100%;" placeholder="Prénom Nom *" /><br/>
+                    <input type="email" required id="senderEmail" name="senderEmail" style="width: 100%;" placeholder="Adresse email *" /><br/>
+                    <input type="number" required id="invitation" name="invitation" style="width: 100%;" placeholder="Nombre de places *" /><br/>
+                    <textarea rows="" cols="" id="message"   name="message" placeholder="Message" ></textarea><br/>
+                    <input type="submit" name="submit" value="envoyer" />
+                  </fieldset>
+                </form>
+            </p>
+           </row>
 
 
-       <div class="container  col-md-2" style="min-height: 23vh; display: flex;align-items: center; text-align:center;">
-         <a href="http://www.agencebio.org/" target="_blank" style="width:100%;"><img src="images\logoeuropeenpantoneab.jpg" alt="Logo Agriculture Biologique Europe" style="height: 5em;"\></a>
-       </div>
-       <row class="container  col-xs-12 col-sm-10 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; min-height: 23vh;">
-          <h1 style="display: none;">Dom&auml;ne Vincendeau - Domaine Vincendeau - Vins de Loire - Vins fins de Loire - Cr&eacute;mant de Loire - Vins d'Anjou - Vins fins - Vins de Qualit&eacute;s - Vins biologiques - Jus de raisin bio</h1>
-          <h2 style="font-size: x-large">Bienvenue au Dom&auml;ne Vincendeau</h1>
-          <p style="margin-top: 8px; margin-bottom: 8px;font-size: 17px;">
-C'est dans un lumineux paysage de vallons et coteaux que nous &eacute;laborons des Cr&eacute;mants &amp; Vins fins de Loire en Appellation d’Origine Prot&eacute;g&eacute;e (AOP). Nos terroirs se situent sur les hauteurs de la commune de Rochefort sur Loire, au c&oelig;ur des Coteaux du Layon. Ce sont des sols tr&ecirc;s peu profonds et caillouteux, avec une belle vue sur le fleuve royal...Un seul c&eacute;page or : Le Chenin – what else ? Et depuis 2015 du Grolleau Noir, c&eacute;page autochtone &eacute;tonnant à d&eacute;cliner en vin rouge, ros&eacute; ou … fines bulles. D&ecirc;s la cr&eacute;ation du Dom&auml;ne en 2014, nos vignes sont cultiv&eacute;es en agriculture biologique certifi&eacute;e Ecocert. Ces quelques rubriques pour vous donner envie de d&eacute;guster nos cuv&eacute;es...
-          </p>
-       </row>
-        <div class="container  col-sm-1 col-md-1"></div>
-        <div class="container  col-sm-1 col-md-1 reseauSociaux" >
-           <p style="position: relative;top:88px;left:1%; text-align:center;">
-               <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a>
-           </p>
-           <p style="position: relative;top:6px;left:1%; text-align:center;">
-             <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
-           </p>
+           <br>
+           <row class="container  col-xs-12 col-sm-6 col-md-6" >
+
+             <h2 style="font-size: x-large">Domäne Night 2018</h2>
+             <p>Le 27 janvier 2018 de 18h00 à 21h00</p>
+             <p style="color:#009cac"><b>Evénement sur réservation</b></p>
+             <p>
+                <img src="images\Invitation DomäneNight 2018_2.jpg"  style="width: 30em;"\><
+             </p>
+           </row>
          </div>
-
-       <row class="bckgrdVagueTurquoise container   col-xs-12 col-sm-12 col-md-12" style="position:relative ;z-index:0;" >
-         <div class="container  col-md-2" ></div>
-         <div class="container   col-xs-12 col-sm-12 col-md-8" style="padding-top : 24px; padding-bottom:10px;padding-left: 5px; padding-right:5px;" >
-            <div class="container  col-xs-12 col-sm-12 col-md-3"  style="padding-left: 0px; width: auto; min-height: 200px; display: grid;align-items: center; padding-top:10px;" >
-              <img src="images/CO-liv-nb.jpg" alt="Liv Vincendeau - Prise en photo par le Courrier de l'Ouest" title="Liv Vincendeau" style="width: auto; height: 165px; border: none;" />
-            </div>
-            <div class="container  col-xs-12 col-sm-12 col-md-9" style="padding-left: 5px; padding-right: 0px; min-height: 200px; display: grid;align-items: center;">
-              <div  style=" font-size: 14px;  text-align: justify; color: white;" class="AccPresentationLivTitre"><b>Liv* Vincendeau</b></div>
-              <div  style=" font-size: 14px;  text-align: justify; color: white;" class="AccPresentationLivCorps">
-Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologique, je suis rest&eacute;e fid&ecirc;le à cette belle province depuis. Cr&eacute;er mon domaine - un rêve!...et ensuite un projet minutieusement pr&eacute;par&eacute;. De nombreux vignerons de France &amp; d'ailleurs m'ont transmis leur savoir-faire et leur passion pour ce magnifique m&eacute;tier. Je les en remercie de tout c&oelig;ur. 2014 est l'ann&eacute;e de la mise en &oelig;uvre – 2017 presque la routine ? Pas du tout ! Chaque mill&eacute;sime est une nouvelle aventure...
-              </div>
-              <div class="txtGris" style="font-size: 14px; height: 14px;">&copy;2014 Josselin CLAIR pour Le Courrier de l'Ouest
-              </div>
-            </div>
-         </div>
-         <div class="container  col-xs-12 col-sm-12  col-md-2"  style="padding-top : 24px; padding-bottom:10px;  min-height: 235px; display: grid;align-items: center;">
-           <a href="https://www.vigneron-independant.com" target="_blank" style="width:100%;"><img src="images\VigeronIndependant.png" alt="Logo Vigneron Indépendant de France" style="width: 5em;"\></a>
-         </div>
-
        </row>
+       <div class="container  col-sm-1 col-md-1 reseauSociaux">
+         <p style="position: relative;top:88px;left:1%; text-align:center;">
+             <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a>
+         </p>
+         <p style="position: relative;top:6px;left:1%; text-align:center;">
+           <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
+         </p>
+     </div>
+
     </div>
 
     <div class="container col-xs-1 col-sm-1 col-md-1"></div>
-
-
-
-    <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Modal with blur effect
-    </button>-->
-    <!-- Modal -->
-    <!---
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 text-center">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
-            <br><br><br /><br />
-             <img src="images\DomäneNight 2017 _REPORTE_.jpg" alt="Portes Ouvertes au Domäne Vincendeau le 09 décembre 2017 - REPORTE" style="width:100%;">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-
   </main>
 
   <footer class="footer col-md-12    col-xs-12 col-sm-12" >
       <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter img-src"  style="background-image: url('images/Le_Vau._Jocsselin_Clair_pied.jpeg'); background-position:center bottom;">
+      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter">
         <div class="row  col-md-2" ></div>
         <div class="row  col-xs-12 col-sm-12 col-md-10" >
           <row class="row  col-md-1 notShortScreen"  ></row>
@@ -196,7 +239,7 @@ Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologiq
               <p style="color:white;">Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
               <p style="color:white;">L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
               <p style="color:white;"><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
-              <p style="color:white;">L'abus d'alcool est dangereux pour la sant&eacute;, sachez le consommer avec mod&eacute;ration</p>
+              <p style="color:white;">L'abus d'alcool est dangereux pour la santé, sachez le consommer avec modération</p>
               <p style="color:white;" id="footer-menu">Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-fins-de-loire.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="presse.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkPresse">Echo</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
           </row>
             <row class="row  col-md-1 notShortScreen"  ></row>
@@ -228,7 +271,6 @@ Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologiq
 
   </div>
 -->
-
   </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="  crossorigin="anonymous"></script>
@@ -238,24 +280,6 @@ Arriv&eacute;e en Anjou en 2000 en cours de formation viticulture-&oelig;nologiq
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
 <script src="js\detectBrowserLang.js"></script>
-
-<!--ouverture du Modal-->
-<script type="text/javascript">
-    $(window).on('load',function(){
-        $('#myModal').modal('show');
-    });
-</script>
-<!--fermeture modal-->
-<script type="text/javascript">
-  $("body").on("click", ".modal-dialog", function(e) {
-       if ($(e.target).hasClass('modal-dialog')) {
-           var hidePopup = $(e.target.parentElement).attr('id');
-           $('#' + hidePopup).modal('hide');
-       }
-   });
-</script>
-
-
 
 <script>
 window.onscroll = function() {
@@ -271,76 +295,3 @@ function growShrinkLogo() {
   }
 }
 </script>
-
-
-<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "LocalBusiness",
-  "url": "http://www.domaenevincendeau.com/",
-  "name" : "Domäne Vincendeau",
-  "description": "Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire. ",
-  "image" : "http://www.domaenevincendeau.com/images/logo-mail.png",
-  "telephone" : "+33241572115",
-  "email" : "contact@domaenevincendeau.com",
-  "address" :
-  {
-    "@type" : "PostalAddress",
-    "streetAddress" : "L'Enclos Route de Port Godard - Les Lombardières",
-    "addressLocality" : "Rochefort sur Loire",
-    "addressCountry" : "France",
-    "postalCode" : "49190"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "name": "Domäne Vincendeau",
-  "url": "http://www.domaenevincendeau.com",
-  "sameAs": [
-    "https://twitter.com/DomaeVincendeau",
-    "https://www.facebook.com/DomaeVincendeau"
-  ]
-}
-</script>
-
-<!---
-A FINIR
-https://developers.google.com/search/docs/data-types/products
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Product",
-  "name": "Les vins fins de Loire du Domäne Vincendeau",
-  "logo": "http://www.domaenevincendeau.com/images/logo-mail.png",
-  "offers": [{
-    "@type": "Offer",
-    "priceCurrency": "[currency]",
-    "price": "[price]",
-    "category": {
-      "@type": "thing",
-      "name": "[name product]"
-    }
-  },{
-    "@type": "Offer",
-    "priceCurrency": "[currency]",
-    "price": "[price]",
-    "category": {
-      "@type": "thing",
-      "name": "[name product]"
-    }
-  },{
-    "@type": "Offer",
-    "priceCurrency": "[currency]",
-    "price": "[price]",
-    "Category": {
-      "@type": "thing",
-      "name": "[name product]"
-    }
-  }]
-}
-</script>
--->
