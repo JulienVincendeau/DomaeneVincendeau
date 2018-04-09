@@ -1,0 +1,88 @@
+/*Ma déclaration du menu via Bootstrap*/
+.navbar-nav {
+  background-color: transparent; !important;
+  border-color: transparent; !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.navbar-nav .navbar-brand {
+  color: #4c585d  !important;
+}
+.navbar-nav .navbar-brand:hover, .navbar-nav .navbar-brand:focus {
+  color: #009cac  !important;
+}
+.navbar-nav .navbar-text {
+  color: #4c585d !important;
+}
+div.navbar-nav.ml-auto a.nav-item{
+  color: #4c585d !important;
+}
+div.navbar-nav.ml-auto a.nav-item:hover, div.navbar-nav.ml-auto a.nav-item:focus {
+  color: #009cac !important;
+}
+div.navbar-nav.ml-auto > .dropdown-menu {
+  background-color: #ffffff !important;
+}
+.navbar-fixed-top .navbar-link,
+.navbar-nav .navbar-link {
+  color: #4c585d !important;
+  font-size: 17px;
+  font-weight: 200;
+}
+.navbar{
+    margin-top: 0px ;
+    min-height : 100px ;
+}
+nav.navbar.navbar-nav.navbar-transparent.cl-effect-14 div.container{
+      position: relative;
+}
+a.navbar-brand.navbar-brand-logo div.logo{
+  position: absolute;
+}
+a.navbar-brand.navbar-brand-logo::before, a.navbar-brand.navbar-brand-logo::after{
+  background: none !important;
+}
+a.nav-item:hover{
+  text-decoration: none;
+}
+a.nav-item.navbar-link.lang.active {
+  color: #009cac !important;
+  background-color: #ffffff !important;
+}
+#navbarNavAltMarkup{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 900px) {
+  .navbar-nav .navbar-nav .open .dropdown-menu > li > a {
+    color: #4c585d !important;
+  }
+
+  .navbar-nav .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #009cac !important;
+  }
+  .navbar-nav .navbar-nav .open .dropdown-menu > .active > a, .navbar-nav .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #009cac !important;
+    background-color: #ffffff !important;
+  }
+  #navbarNavAltMarkup{
+    position: unset;
+  }
+  .nav > li {
+    /*display: table-cell;*/
+    position: relative;
+  }
+  .navbar-toggle{
+    position: relative;;
+    top: 0px;
+    right: 0px;
+    z-index: 15;
+  }
+}
+
+
+.navbar-nav{
+  float: right;
+}
