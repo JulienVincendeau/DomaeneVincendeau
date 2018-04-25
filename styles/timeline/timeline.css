@@ -56,16 +56,17 @@
   top: -1px;
 }
 #timeline .timeline-badge.timeline-future-movement {
-	background-color: #ffffff;
+	background-color: #009cac;
 	height: 120px;
 	width: 120px;
 	font-size: 1.7em;
 	top: -16px;
 	margin-left: -60px;
 	border: 2px solid #009cac;
+  color:  #009cac;
 }
 #timeline .timeline-badge.timeline-future-movement p {
-	color:#009cac;
+	color: white;
 	position: absolute;
 	top: 40px;
 	left: 32px;
@@ -92,7 +93,7 @@
   border-radius: 3px;
   background-color: #FFFFFF;
   color: #666;
-  padding: 10px;
+  padding: 20px 10px 20px 10px;
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
