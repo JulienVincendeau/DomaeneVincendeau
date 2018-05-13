@@ -30,189 +30,201 @@
       <meta property="og:description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire. " />
       <meta property="og:site_name" content="Dom&auml;ne Vincendeau" />
 
-
       <meta name="description" content="Entre coteaux et bords de Loire nous &eacute;laborons des vins fins de Loire en Anjou, certifi&eacute;s ecocert, sur la commune de Rochefort-sur-Loire." />
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <!--Effet du menu -->
       <link rel="stylesheet" type="text/css" href="frameworks\CreativeLinkEffects\css\component.css" />
       <!--Definition des couleurs des barres qui vont tourner autour du lien -->
       <link rel="stylesheet" type="text/css" href="styles\myCreativeLinkEffects.css" />
       <!--Déclaration de notre barre de menu bootstrap-->
-      <link rel="stylesheet" type="text/css" href="styles\myBootstrapMenu.css" />
+      <link rel="stylesheet" type="text/css" href="styles\myBootstrapMenu.bs4.css" />
+      <link rel="stylesheet" type="text/css" href="styles\footer.css" />
 
       <!-- fa -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
       <!--Mon identité-->
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
 
       <link rel="shortcut icon" href="images/favicon.ico" />
 
+
       <!-- modal -->
       <link rel="stylesheet" type="text/css" href="styles\modal-blur.css" />
 
     </head>
-  <body class="structureEntete">
+  <body>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-    <div id="navbar-full">
-       <div id="navbar">
-          <!--
-           navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
-           -->
-           <nav class="navbar navbar-default navbar-transparent  cl-effect-14 " role="navigation">
-             <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
-             <div class="container  col-xs-10 col-sm-10 col-md-10 ">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
-                    <div class="logo" >
-                       <img src="images\logo-mail.png" class="imgBrand"  id='Logo'>
-                    </div>
-                    <div class="brand">  </div>
-                 </a>
-               </div>
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav navbar-right"  style="margin-right: 0px;">
-                   <li class="active"><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
-                   <li><a href="valeurs.html" class="navbar-link lang" key="linkValeurs">Valeurs</a></li>
-                   <li><a href="qualitaet.html" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a></li>
-                   <li><a href="vins-fins-de-loire.html" class="navbar-link lang" key="linkVins">Vins</a></li>
-                   <li><a href="presse.html" class="navbar-link lang" key="linkPresse">Echo</a></li>
-                   <li><a href="event.html" class="nav-item  nav-item navbar-link lang" key="linkEvents">Events</a></li>
-                   <li><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
-                 </ul>
-               </div><!-- /.navbar-collapse -->
-             </div><!-- /.container-fluid -->
-             <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
-           </nav>
-       </div><!--  end navbar -->
+ <header>
+ <div id="navbar-full">
+    <div id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white cl-effect-14"  role="navigation">
+        <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
+        <div class="container  col-xs-10 col-sm-10 col-md-10 ">
+          <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
+             <div class="logo" >
+                <img src="images\logo-mail.png" class="imgBrand"  id='Logo'>
+             </div>
+             <div class="brand">  </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+             <div class="navbar-nav   ml-auto">
+               <a href="index.html" class="nav-item navbar-link lang active" key="linkHome">Dom&auml;ne</a>
+               <a href="valeurs.html" class="nav-item navbar-link lang" key="linkValeurs">Valeurs</a>
+               <a href="qualitaet.html" class="nav-item navbar-link lang" key="linkQualitaet">Qualit&auml;t</a>
+               <a href="vins-fins-de-loire.html" class="nav-item navbar-link lang" key="linkVins">Vins</a>
+               <a href="presse.html" class="nav-item navbar-link lang" key="linkPresse">Echo</a>
+               <a href="event.html" class="nav-item  nav-item navbar-link lang " key="linkEvents">Events</a>
+               <a href="contact.php" class="nav-item navbar-link lang" key="linkContact">Contact</a>
+            </div>
+           </div>
+         </div><!-- /.container-fluid -->
+         <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
+       </nav>
+    </div><!--  end navbar -->
 
-   </div> <!-- end menu-dropdown -->
- </header>
-  <main>
-    <section id="etoilesBckg" >
-  	<!--	<img src="images/etoile grande.jpg" alt="" title="" style="top: -195px; height: 647px; right: -451px; position: absolute; z-index: -5;" />
-  			<img src="images/etoile petite.jpg" alt="" title="" style="left: -517px; top: 175px; height: 279px; position: absolute; z-index: -5;" />-->
-  	</section>
-
-    <div class="container col-xs-1 col-sm-1 col-md-1"></div>
-    <div class="main col-xs-10 col-sm-10 col-md-10">
-       <row class="bandeau-container  col-xs-12 col-sm-12 col-md-12" style="padding-right:0px; padding-left:0px;">
-             <div class="img-src" style="background-image: url('images/Le_Vau._Jocsselin_Clair.jpeg'); background-position:center top;"></div>
-       </row>
+</div> <!-- end menu-dropdown -->
+</header>
 
 
-       <div class="container  col-md-2" style="min-height: 23vh; display: flex;align-items: center; text-align:center;">
-         <a href="http://www.agencebio.org/" target="_blank" style="width:100%;"><img src="images\logoeuropeenpantoneab.jpg" alt="Logo Agriculture Biologique Europe" style="height: 5em;"\></a>
+
+<main>
+  <div class="main container-fluid ">
+    <row class="bandeau-container  container-fluid" >
+          <div class="img-src" style="background-image: url('images/Le_Vau._Jocsselin_Clair.jpeg'); background-position:center top;"></div>
+    </row>
+    <div class="row">
+      <div class="col col-xl-2 col-lg-2 col-sm-12  col-md-12  col-12" style="min-height: 23vh; display: flex;align-items: center; text-align:center;">
+        <a href="http://www.agencebio.org/" target="_blank" style="width:100%;"><img src="images\logoeuropeenpantoneab.jpg" alt="Logo Agriculture Biologique Europe" style="height: 5em;"\></a>
+      </div>
+      <div class="col col-xl-8 col-lg-8  col-sm-12 col-md-12  col-12" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; min-height: 23vh;">
+        <h1 style="display: none;">Dom&auml;ne Vincendeau - Domaine Vincendeau - Vins de Loire - Vins fins de Loire - Cr&eacute;mant de Loire - Vins d'Anjou - Vins fins - Vins de Qualit&eacute;s - Vins biologiques - Jus de raisin bio</h1>
+        <h2 style="font-size: x-large">Bienvenue au Dom&auml;ne Vincendeau</h1>
+        <p style="margin-top: 8px; margin-bottom: 8px;font-size: 17px;">
+          A l’origine un investissement dans l’achat de plus de sept hectares de terre situé sur la Corniche Angevine (sité classé), un coin de paradis sur les hauteurs de Rochefort sur Loire. La moitié était plantée en Chenin blanc, notre cépage autochtone. Depuis est arrivée une parcelle de Grolleau Noir. Dès le premier jour, je cultive mes vignes et j’élabore mes vins selon les règles de l’agriculture biologique (certifiée Ecocert). J’ai été élevé ainsi, une évidence ! Le terroir est d’un caractère redoutable, très caillouteux=minéral : Schiste vert & pourpre, Spilite, Phtannite, Quartz...Les rendements sont faibles, maximum 35 hectolitres par hectare ou moins, selon l’âge de la vigne.
+          <br>
+          J’ai entrepris un programme de plantations de vignes pour rajeunir le vignoble, tout en conservant les plus belles vieilles parcelles.
+          Mon apprentissage et mes premières expériences en viticulture, œnologie et commerce me permettent de gérer moi-même, de manière attentionnée, minutieuse & exigeante le travail aussi bien dans les vignes, la cave et les autres « services ». Après tout, il s’agit d’une véritable (jeune) entreprise ! Quelques fidèles saisonniers embauchés en local complètent l’équipe du Domäne lors des  hautes saisons (vendanges, taille, ébourgeonnages, conditionnement), ainsi que l’aide précieuse par ma famille.
+          <br>
+          100 % de mes jolis raisins sont récoltés à la main.
+          <br>
+          Un travail d’artisan. Un défi.
+          <br>
+          Curieux ? Continuez votre lecture...Ecrivez-moi. Dégustez mes Crémants & Vins fins de Loire. Vous en trouverez chez votre caviste, dans votre restaurant préféré, à New York, Genève, Paris, Parma, Angers (liste non-exhaustive) ou .. au Domäne.
+        </p>
+      </div>
+      <div class="col col-xl-2 col-lg-2  col-sm-12  col-md-12  col-12" >
+
        </div>
-       <row class="container  col-xs-12 col-sm-10 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; min-height: 23vh;">
-          <h1 style="display: none;">Dom&auml;ne Vincendeau - Domaine Vincendeau - Vins de Loire - Vins fins de Loire - Cr&eacute;mant de Loire - Vins d'Anjou - Vins fins - Vins de Qualit&eacute;s - Vins biologiques - Jus de raisin bio</h1>
-          <h2 style="font-size: x-large">Bienvenue au Dom&auml;ne Vincendeau</h1>
-          <p style="margin-top: 8px; margin-bottom: 8px;font-size: 17px;">
-            A l’origine un investissement dans l’achat de plus de sept hectares de terre situé sur la Corniche Angevine (sité classé), un coin de paradis sur les hauteurs de Rochefort sur Loire. La moitié était plantée en Chenin blanc, notre cépage autochtone. Depuis est arrivée une parcelle de Grolleau Noir. Dès le premier jour, je cultive mes vignes et j’élabore mes vins selon les règles de l’agriculture biologique (certifiée Ecocert). J’ai été élevé ainsi, une évidence ! Le terroir est d’un caractère redoutable, très caillouteux=minéral : Schiste vert & pourpre, Spilite, Phtannite, Quartz...Les rendements sont faibles, maximum 35 hectolitres par hectare ou moins, selon l’âge de la vigne.
-            <br>
-            J’ai entrepris un programme de plantations de vignes pour rajeunir le vignoble, tout en conservant les plus belles vieilles parcelles.
-            Mon apprentissage et mes premières expériences en viticulture, œnologie et commerce me permettent de gérer moi-même, de manière attentionnée, minutieuse & exigeante le travail aussi bien dans les vignes, la cave et les autres « services ». Après tout, il s’agit d’une véritable (jeune) entreprise ! Quelques fidèles saisonniers embauchés en local complètent l’équipe du Domäne lors des  hautes saisons (vendanges, taille, ébourgeonnages, conditionnement), ainsi que l’aide précieuse par ma famille.
-            <br>
-            100 % de mes jolis raisins sont récoltés à la main.
-            <br>
-            Un travail d’artisan. Un défi.
-            <br>
-            Curieux ? Continuez votre lecture...Ecrivez-moi. Dégustez mes Crémants & Vins fins de Loire. Vous en trouverez chez votre caviste, dans votre restaurant préféré, à New York, Genève, Paris, Parma, Angers (liste non-exhaustive) ou .. au Domäne.
-          </p>
-       </row>
-        <div class="container  col-sm-1 col-md-1"></div>
-        <div class="container  col-sm-1 col-md-1 reseauSociaux" >
-           <p style="position: relative;top:88px;left:1%; text-align:center;">
-               <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a>
-           </p>
-           <p style="position: relative;top:6px;left:1%; text-align:center;">
-             <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
-           </p>
-         </div>
-
-       <row class="bckgrdVagueTurquoise container   col-xs-12 col-sm-12 col-md-12" style="position:relative ;z-index:0;" >
-         <div class="container  col-md-2" ></div>
-         <div class="container   col-xs-12 col-sm-12 col-md-8" style="padding-top : 24px; padding-bottom:10px;padding-left: 5px; padding-right:5px;" >
-            <div class="container  col-xs-12 col-sm-12 col-md-3"  style="padding-left: 0px; width: auto; min-height: 200px; display: grid;align-items: center; padding-top:10px;" >
-              <img src="images/CO-liv-nb.jpg" alt="Liv Vincendeau - Prise en photo par le Courrier de l'Ouest" title="Liv Vincendeau" style="width: auto; height: 165px; border: none;" />
-            </div>
-            <div class="container  col-xs-12 col-sm-12 col-md-9" style="padding-left: 5px; padding-right: 0px; min-height: 200px; display: grid;align-items: center;">
-              <div  style=" font-size: 14px;  text-align: justify; color: white;" class="AccPresentationLivTitre"><b>Liv* Vincendeau</b></div>
-              <div  style=" font-size: 14px;  text-align: justify; color: white;" class="AccPresentationLivCorps">
-Née à Darmstadt en Allemagne où j’ai grandi, je suis d’abord parti faire mes études (Master II de Chimie) à York (UK) et à Strasbourg (Alsace).  Arrivée en Anjou en 2000 en cours de formation viticulture-œnologique, je suis restée fidèle à cette belle province depuis. Créer mon domaine - un rêve!...et ensuite un projet soigneusement préparé. De nombreux vignerons de France & d'ailleurs m'ont transmis leur savoir-faire et leur passion pour ce magnifique métier. Je les en remercie de tout cœur. 2014 est l'année de la mise en œuvre  & depuis chaque millésime une nouvelle aventure...
-              </div>
-              <div class="txtGris" style="font-size: 14px; height: 14px;">&copy;2014 Josselin CLAIR pour Le Courrier de l'Ouest
-              </div>
-            </div>
-         </div>
-         <div class="container  col-xs-12 col-sm-12  col-md-2"  style="padding-top : 24px; padding-bottom:10px;  min-height: 235px; display: grid;align-items: center;">
-           <a href="https://www.vigneron-independant.com" target="_blank" style="width:100%;"><img src="images\VigeronIndependant.png" alt="Logo Vigneron Indépendant de France" style="width: 5em;"\></a>
-         </div>
-
-       </row>
     </div>
 
-    <div class="container col-xs-1 col-sm-1 col-md-1"></div>
-
-
-
-    <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Modal with blur effect
-    </button>-->
-    <!-- Modal -->
-    <!---
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 text-center">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
-            <br><br><br /><br />
-             <img src="images\DomäneNight 2017 _REPORTE_.jpg" alt="Portes Ouvertes au Domäne Vincendeau le 09 décembre 2017 - REPORTE" style="width:100%;">
-            <hr>
+    <div class="row container-fluid bckgrdVagueTurquoise ">
+      <div class="row">
+          <div class="col col-xl-2 col-lg-2 col-sm-12  col-md-12  col-12" >
           </div>
-        </div>
+          <div class="col col-xl-8 col-lg-8  col-sm-12 col-md-12  col-12" style="padding :0 0 0 0;vertical-align: middle;margin: auto;top: 4%; ">
+            <table>
+              <tr>
+                <td>
+                  <img src="images/CO-liv-nb.jpg" alt="Liv Vincendeau - Prise en photo par le Courrier de l'Ouest" title="Liv Vincendeau" style="width: auto; height: 165px; border: none;" />
+                </td>
+                <td style="padding-left: 10px;">
+                  <div  style=" font-size: 14px;  text-align: justify; color: white;" class="AccPresentationLivTitre"><b>Liv* Vincendeau</b></div>
+                  <div  style=" font-size: 14px;  text-align: justify; color: white;" class="AccPresentationLivCorps">
+         Née à Darmstadt en Allemagne où j’ai grandi, je suis d’abord parti faire mes études (Master II de Chimie) à York (UK) et à Strasbourg (Alsace).  Arrivée en Anjou en 2000 en cours de formation viticulture-œnologique, je suis restée fidèle à cette belle province depuis. Créer mon domaine - un rêve!...et ensuite un projet soigneusement préparé. De nombreux vignerons de France & d'ailleurs m'ont transmis leur savoir-faire et leur passion pour ce magnifique métier. Je les en remercie de tout cœur. 2014 est l'année de la mise !en œuvre  & depuis chaque millésime une nouvelle aventure...
+                  </div>
+                  <div class="txtGris" style="font-size: 14px; height: 14px;">&copy;2014 Josselin CLAIR pour Le Courrier de l'Ouest
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col col-xl-2 col-lg-2  col-sm-12  col-md-12  col-12 notShortScreen" style="padding :0 0 0 0;vertical-align: middle;margin: auto;top: 4%; text-align: center;" >
+            <a href="https://www.vigneron-independant.com" target="_blank" style="width:100%;"><img src="images\VigeronIndependant.png" alt="Logo Vigneron Indépendant de France" style="width: 5em;"\></a>
+           </div>
       </div>
     </div>
-    -->
+    <div class="col  col-12 shortScreen" style="padding-top: 2em; vertical-align: middle;margin: auto;top: 4%; text-align: center;" >
+      <a href="https://www.vigneron-independant.com" target="_blank" style="width:100%;"><img src="images\VigeronIndependant.png" alt="Logo Vigneron Indépendant de France" style="width: 5em;"\></a>
+     </div>
+ </div>
 
-  </main>
+ <div class="container col-xs-1 col-sm-1 col-md-1"></div>
+ <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+   Modal with blur effect
+ </button>-->
+ <!-- Modal -->
+ <!---
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-6 col-sm-offset-3 text-center">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+         <br><br><br /><br />
+          <img src="images\DomäneNight 2017 _REPORTE_.jpg" alt="Portes Ouvertes au Domäne Vincendeau le 09 décembre 2017 - REPORTE" style="width:100%;">
+         <hr>
+       </div>
+     </div>
+   </div>
+ </div>
+ -->
+</main>
 
-  <footer class="footer col-md-12    col-xs-12 col-sm-12" >
-      <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter img-src"  style="background-image: url('images/Le_Vau._Jocsselin_Clair_pied.jpeg'); background-position:center bottom;">
-        <div class="row  col-md-2" ></div>
-        <div class="row  col-xs-12 col-sm-12 col-md-10" >
-          <row class="row  col-md-1 notShortScreen"  ></row>
-          <row class="row  col-md-10  col-xs-12 col-sm-12">
-              <p style="color:white;">Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
-              <p style="color:white;">L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
-              <p style="color:white;"><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
-              <p style="color:white;">L'abus d'alcool est dangereux pour la sant&eacute;, sachez le consommer avec mod&eacute;ration</p>
-              <p style="color:white;" id="footer-menu">Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-fins-de-loire.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="presse.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkPresse">Echo</a> &bull; <a href="event.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkEvents">Events</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
-          </row>
-            <row class="row  col-md-1 notShortScreen"  ></row>
-        </div>
-      </div>
-      <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-  </footer>
+<!-- Footer -->
+<footer >
+  <div class="container-fluid ">
+  	<section id="footer"  style="background-image: url('images/Le_Vau._Jocsselin_Clair_pied.jpeg') !important; background-position:center bottom !important; background-repeat: no-repeat !important;background-size: cover !important;" >
+  		<div class="container">
+  			<div class="row text-center text-xs-center text-sm-left text-md-left">
+  				<div class="col-xs-12 col-sm-12 col-md-12 col-12">
+  					<h5>Plan du site</h5>
+  					<ul class="list-unstyled quick-links">
+  						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Dom&auml;ne</a></li>
+  						<li><a href="valeurs.html"><i class="fa fa-angle-double-right"></i>Valeurs</a></li>
+  						<li><a href="qualitaet.html"><i class="fa fa-angle-double-right"></i>Qualit&auml;t</a></li>
+  						<li><a href="vins-fins-de-loire.html"><i class="fa fa-angle-double-right"></i>Vins</a></li>
+  						<li><a href="presse.html"><i class="fa fa-angle-double-right"></i>Echo</a></li>
+  						<li><a href="event.html"><i class="fa fa-angle-double-right"></i>Events</a></li>
+  						<li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+  						<li><a href="mentions-legales.html"><i class="fa fa-angle-double-right"></i>Mentions l&eacute;gales</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 0px !important;">
+  					<ul class="list-unstyled list-inline social text-center">
+  						<li class="list-inline-item"><a href="https://www.facebook.com/DomaeVincendeau/"><i class="fab fa-facebook-f"></i></a></li>
+  						<li class="list-inline-item"><a href="https://twitter.com/DomaeVincendeau"><i class="fab fa-twitter"></i></a></li>
+  						<li class="list-inline-item"><a href="https://www.instagram.com/liv_vincendeau/"><i class="fab fa-instagram"></i></a></li>
+  						<li class="list-inline-item"><a href="https://goo.gl/maps/1ZzjXZ1QBiL2"><i class="fas fa-map-marker-alt"></i></a></li>
+  						<li class="list-inline-item"><a href="mailto:contact@domaenevincendeau.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+  					</ul>
+  				</div>
+  				</hr>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <p>Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
+            <p>L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
+            <p>L'abus d'alcool est dangereux pour la sant&eacute;, sachez le consommer avec mod&eacute;ration</p>
+            <p><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created with <i class="fas fa-heart"></i> by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
+            <p class="h6">&copy All right Reversed. Domäne Vincendeau</p>
+  				</div>
+  				</hr>
+  			</div>
+  		</div>
+  	</section>
+  </div>
+	<!-- ./Footer -->
+</footer>
 
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -240,9 +252,9 @@ Née à Darmstadt en Allemagne où j’ai grandi, je suis d’abord parti faire 
 
   </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="  crossorigin="anonymous"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>

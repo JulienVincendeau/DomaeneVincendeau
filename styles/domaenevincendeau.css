@@ -157,31 +157,33 @@ input[type=submit], input[type=reset] {
  box-shadow:1px 1px 1px #d4d4d4;
  cursor:pointer;
  }
+ .shortScreen{
+   display: none;
+ }
 
 @media screen and (max-width: 850px) {
   .bckgrdVagueTurquoise{
     width:100%;
-    height:auto;
-    background-size:100% 100%;
+    height: 120%;
+    background: #009cac;
+    margin-top: 2em;
   }
   .imgBrand{
     width: 120px;
   }
-}
-
-@media screen and (max-width: 701px) {
   .imgBrandScrolled{
     display: none;
   }
   .notShortScreen{
     display: none;
   }
-  /**Affichage des liens reseaux sociaux**/
-  .reseauSociaux{
-    position: fixed;
-    bottom: 10%;
-    left: 0px;
+  .shortScreen{
+    display: block;
   }
+}
+
+@media screen and (max-width: 701px) {
+
 }
 
 @media screen and (max-width: 1800px) {
