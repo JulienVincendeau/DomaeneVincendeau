@@ -117,6 +117,33 @@
          			</div>
 
               <div class="row timeline-movement">
+                <div class="timeline-badge center-left">
+
+                </div>
+                <div class="col-sm-6  timeline-item">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <div class="timeline-panel credits  anim animate fadeInLeft">
+                        <ul class="timeline-panel-ul">
+                          <div class="lefting-wrap">
+                            <li class="img-wraping"><a href="#DomaeneDay2018" class="pop" name="DomaeneDay2018"><img src="images\DomäneDay2018.jpg" class="img-responsive img-thumbnail" alt="Portes Ouvertes - DomäneDay 2018" style="width: 135px;height: auto;"/></a></li>
+                          </div>
+                          <div class="righting-wrap">
+                            <li><a href="https://www.facebook.com/events/178540986179773/?active_tab=about" class="importo" target="_blank">DOMÄNE DAY<br>2018</a></li>
+                            <li><span class="causale" style="font-weight: 600;"><a href="https://goo.gl/maps/4URXZftcguQ2" target="_blank" class="causale" style="color: inherit;">Domäne Vincendeau - Rochefort-sur-Loire</a></span> </li>
+                            <li><span class="causale">Vous avez dit "Terroir" ?</span> </li>
+                            <li><a class="importo"><i class="glyphicon glyphicon-time"></i> 10 Juin 2018</a> </li>
+                          </div>
+                          <div class="clear"></div>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row timeline-movement">
                 <div class="timeline-badge center-right">
 
                 </div>
@@ -409,6 +436,19 @@
 
   </div>
 -->
+
+    <!--Modal pour l'image-->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="padding-left: 0px;padding-right: 0px;padding-bottom: 0px;padding-top: 0px;">
+          	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <img src="" class="imagepreview" style="width: 100%;" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // -->
   </body>
 </html>
 <!--
@@ -421,6 +461,7 @@
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
 <script src="js\detectBrowserLang.js"></script>
+<script src="js\openImageInModal.js"></script>
 
 <script>
 window.onscroll = function() {
