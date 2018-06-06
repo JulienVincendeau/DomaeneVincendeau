@@ -32,25 +32,24 @@
 
 
       <meta name="description" content="Les valeurs du Domäne Vincendeau vous seront présentées ici.." />
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <!--Effet du menu -->
       <link rel="stylesheet" type="text/css" href="frameworks\CreativeLinkEffects\css\component.css" />
       <!--Definition des couleurs des barres qui vont tourner autour du lien -->
       <link rel="stylesheet" type="text/css" href="styles\myCreativeLinkEffects.css" />
       <!--Déclaration de notre barre de menu bootstrap-->
-      <link rel="stylesheet" type="text/css" href="styles\myBootstrapMenu.css" />
+      <link rel="stylesheet" type="text/css" href="styles\myBootstrapMenu.bs4.css" />
+      <link rel="stylesheet" type="text/css" href="styles\footer.css" />
 
       <!-- fa -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 
       <!--Mon identité-->
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
+
+      <link rel="shortcut icon" href="images/favicon.ico" />
+
 
       <!-- mon timeline -->
       <link rel="stylesheet" type="text/css" href="styles\timeline.css" />
@@ -66,245 +65,246 @@
     <header>
     <div id="navbar-full">
        <div id="navbar">
-          <!--
-           navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
-           -->
-           <nav class="navbar navbar-default navbar-transparent  cl-effect-14 " role="navigation">
-             <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
-             <div class="container  col-xs-10 col-sm-10 col-md-10 ">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
-                    <div class="logo" >
-                       <img src="images\logo-mail.png" class="imgBrand"  id='Logo'>
-                    </div>
-                    <div class="brand">  </div>
-                 </a>
+         <nav class="navbar navbar-expand-lg navbar-light bg-white cl-effect-14"  role="navigation">
+           <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
+           <div class="container  col-xs-10 col-sm-10 col-md-10 ">
+             <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
+                <div class="logo" >
+                   <img src="images\logo-mail.png" class="imgBrand"  id='Logo'>
+                </div>
+                <div class="brand">  </div>
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+                <div class="navbar-nav   ml-auto">
+                  <a href="index.html" class="nav-item navbar-link lang " key="linkHome">Dom&auml;ne</a>
+                  <a href="valeurs.html" class="nav-item navbar-link lang active" key="linkValeurs">Valeurs</a>
+                  <a href="qualitaet.html" class="nav-item navbar-link lang " key="linkQualitaet">Qualit&auml;t</a>
+                  <a href="vins-fins-de-loire.html" class="nav-item navbar-link lang" key="linkVins">Vins</a>
+                  <a href="presse.html" class="nav-item navbar-link lang" key="linkPresse">Echo</a>
+                  <a href="event.html" class="nav-item  nav-item navbar-link lang " key="linkEvents">Events</a>
+                  <a href="contact.php" class="nav-item navbar-link lang" key="linkContact">Contact</a>
                </div>
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav navbar-right"  style="margin-right: 0px;">
-                   <li><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
-                   <li class="active"><a href="valeurs.html" class="navbar-link lang" key="linkValeurs">Valeurs</a></li>
-                   <li><a href="qualitaet.html" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a></li>
-                   <li><a href="vins-fins-de-loire.html" class="navbar-link lang" key="linkVins">Vins</a></li>
-                   <li><a href="presse.html" class="navbar-link lang" key="linkPresse">Echo</a></li>
-                   <li><a href="event.html" class="nav-item  nav-item navbar-link lang" key="linkEvents">Events</a></li>
-                   <li><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
-                 </ul>
-               </div><!-- /.navbar-collapse -->
-             </div><!-- /.container-fluid -->
-             <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
-           </nav>
+              </div>
+            </div><!-- /.container-fluid -->
+            <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
+          </nav>
        </div><!--  end navbar -->
 
    </div> <!-- end menu-dropdown -->
- </header>
-  <main>
-    <section id="etoilesBckg" >
-  	<!--	<img src="images/etoile grande.jpg" alt="" title="" style="top: -195px; height: 647px; right: -451px; position: absolute; z-index: -5;" />
-  			<img src="images/etoile petite.jpg" alt="" title="" style="left: -517px; top: 175px; height: 279px; position: absolute; z-index: -5;" />-->
-  	</section>
+   </header>
 
-    <div class="container col-xs-1 col-sm-1 col-md-1"></div>
-    <div class="main col-xs-10 col-sm-10 col-md-10">
-       <row class="bandeau-container  col-xs-12 col-sm-12 col-md-12" style="padding-right:0px; padding-left:0px;">
-             <div class="img-src" style="background-image: url('images/insect_haut.jpeg'); background-position:center bottom;"></div>
+
+
+   <main>
+     <div class="main container-fluid ">
+       <row class="bandeau-container  container-fluid" >
+         <div class="img-src" style="background-image: url('images/insect_haut.jpeg'); background-position:center bottom;"></div>
        </row>
-
-       <row class="container  col-xs-12 col-sm-11 col-md-11" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; ">
-
-
-         <div class="container" style="font-size: 12px;">
-           <div class="row">
-             <div class="col-lg-12">
-               <h3 class="text-center"></h3>
-               <p>               </p>
-               <ul class="timeline">
-                 <li>
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>Famille</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- C'est d'abord grâce à ma famille, mon mari tout particulièrement, que j'ai osé réaliser mon rêve de faire mon vin. Leur soutien, leur confiance et leur encouragement m'ont donné la force nécessaire et aussi...des ailes ! Notre fils, né en 2013, participe à sa manière : Aux vendanges il courait d'abord vers les caisses de raisins pour les goûter un par un - contrôle qualité ! Il a découvert le tracteur (sans tourner la clé) et apprécie la ballade dans les vignes et la dégustation..du Jus de Raisin. Notre Domäne a été créé de toutes pièces en 2014 - nous sommes la première génération, pionnière ? Certes, nos ancêtres, des deux côtés, ont cultivé la vigne mais il faut remonter quelques générations et nous voici dans la forêt noire ou en Touraine. Transmission en pointillées...Reste un caractère familial de par la dimension de l'entreprise, l'architecture de la propriété avec une cour commune entre bâtiment agricole et la maison d'habitation ainsi qu'un accueil simple et chaleureux, avec la fameuse vue sur Béhuard avec la Loire, belle par tous les temps. La famille, c'est le cocon qui nous berce, ressource et qui nous voit grandir jour après jour. Qu'il s'agit de protéger et de savourer. Tout comme l'amitié.
-                       </p>
-                     </div>
-                   </div>
-                   <!--<div class="line"></div>-->
-                 </li>
-                 <li class="timeline-inverted">
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>TERROIR</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Mot magique, tellement français que - à ma connaissance - aucune langue sait y mettre un seul mot pour traduire son sens profond. Il y a beaucoup de « terre » dedans. Respect de cette terre, donc d'abord. Une certaine idée de l'écologie. Un terroir que nous cherchons à révéler par notre travail de vigneron. Avec délicatesse et justesse, force &amp; passion. Afin que vous puissiez y goûter. En direct de Rochefort sur Loire, village poétique et dynamique avec vue sur la Loire.
-                        </p>
-                     </div>
-                   </div>
-                  <!-- <div class="line"></div>-->
-                 </li>
-                 <li>
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>PRO</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Le rêve de faire mon vin..et une préparation minutieuse pour le mettre en oeuvre. Montage financier sur la base d'un business plan sur cinq ans. Création d'une entreprise individuelle dès le printemps 2014. Me voici aux commandes. Plongée au quotidien et à plein temps dans la gestion professionnelle d'une entreprise. Passionnant et aussi grisant. Que ce soit la stratégie des investissements, le commerce, la communication, le management, la comptabilité, l'administration, la technique, la gestion de la trésorerie, les ressources humaines,..je m'y attèle avec attention et exigence, appuyée par une belle et compétente équipe de conseillers, fournisseurs, prestataires.                        </p>
-                     </div>
-                   </div>
-                   <!--<div class="line"></div>-->
-                 </li>
-                 <li class="timeline-inverted">
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>METIER</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Vigneron. Métier biblique, gestes millénaires, traditions préservées qui rencontrent des recherches et technologies toutes récentes. Savant équilibre. Métier qui, j'en suis convaincue, s'apprend avant tout en regardant faire un maître...d'apprentissage. En l'écoutant, lui qui connaît son terroir, sa terre, ses vignes, ses vins sur les bouts des doigts depuis des générations. Sur la base d'un DEA de Chimie j'ai choisi un Brevet Professionnel de Responsable d'Entreprise Agricole (BPREA), formation par alternance. Donc toujours immergée dans le travail au quotidien, expérience dans plusieurs vignobles de France &amp; Europe, le chemin mène enfin en Anjou. Je complète l'apprentissage de la production du vin par le diplôme en Commerce &amp; Gestion de l'Ecole Supérieure des Sciences Commerciales d'Angers (ESSCA).
-                       </p>
-                     </div>
-                   </div>
-                   <!--<div class="line"></div>-->
-                 </li>
-                 <li>
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>ENERGIES</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Sujet d'une grande actualité - quelle énergie pour travailler mes vignes, livrer mes clients, me déplacer ? Tracteur ou pas tracteur ?...Pour l'instant, petite cuve à gazole et tracteur vert dans la cour. Travailler le sol avec un cheval dans l'avenir serait envisageable: Mes diplômes d'attelage obtenus au Haras du Pin me permettent d'envisager ce choix technique et le Domäne comprend des belles prairies pour nourrir le cheval. En parallèle j'ai fait le choix d'une voiture 100% électrique pour mes livraisons &amp; déplacements. Afin de favoriser la production d'électricité à partir d'énergies renouvelables, je projette une adhésion à ENERCOOP, fournisseur d'électricité sous forme coopérative.
-                       </p>
-                     </div>
-                   </div>
-                  <!-- <div class="line"></div>-->
-                 </li>
-
-
-                 <li class="timeline-inverted">
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>QUALITE</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Elaborer des produits de qualité, purs et sincères, avec un habillage attractif: respecter la vigne et le vin de la plantation à la dégustation. Et donc respecter celle ou celui qui acquiert mon vin, vous, les clients. D'abord un côté technique : Travailler avec exigence, mettre en place une traçabilité interne et pourquoi pas un contrôle externe (indépendant) : Adhérer à un cahier de charge qui résulte en l'attribution d'un label, signe repère pour le client. J'ai ainsi choisi l'organisme Ecocert pour m'accompagner dans la certification de mon Domäne en Agriculture Biologique. Le second cahier de charge qui me guide est celui géré par l'Institut National des Appellations d'Origine (INAO) : l'AOC. Tout un programme ! Ensuite un côté humain : Etablir une relation de qualité avec tous les interlocuteurs du Domäne : le sens du service et de la satisfaction de mes clients et un échange professionnel &amp; respectueux avec les fournisseurs/prestataires du Domäne.                       </p>
-                     </div>
-                   </div>
-                   <!--<div class="line"></div>-->
-                 </li>
-                 <li>
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>BEAUTE</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Que ce soit dans la vigne, le vin, pour l'habillage bouteille, le papier en-tête ou les cartons de vin, je cherche une harmonie et une certaine beauté. Aussi à une plus grande échelle : La conscience qu'en tant que vigneron, agriculteur nous façonnons le paysage quand nous cultivons nos terres et quand nous aménageons nos bâtiments. Notre chai ainsi que nos vignes sont situés au coeur de sites classés par les Architectes des Bâtiments de France et d'un patrimoine mondial de l'UNESCO... Les chartes associées guident nos choix...dans le noble but de préserver l'esthétique du paysage autour de nous. Dès notre arrivée nous avons inscrit notre propriété en tant que Refuge à la Ligue pour la Protection des Oiseaux (LPO).
-                        </p>
-                     </div>
-                   </div>
-                   <!--<div class="line"></div>-->
-                 </li>
-
-                 <li class="timeline-inverted">
-                   <div class="timeline-image">
-                     <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
-                   </div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <h4>CITOYEN</h4>
-                       <h4 class="subheading"></h4>
-                     </div>
-                     <div class="timeline-body">
-                       <p class="text-muted">
- Au-delà de la vigne, la cité : Notre Domäne se situe à Rochefort sur Loire près d'Angers. Telle la vigne dans son terroir, notre entreprise s'est enracinée dans ce beau village dynamique et accueillant. Village qui représente une identité, une origine, la base de la vie publique. Il me semble important d'y participer, de s'intéresser aux actions de la Mairie en collaboration avec les habitants. D'instaurer un dialogue constructif pour faire évoluer la commune, que ce soit en tant que professionnel ou particulier. L'équipe municipale propose une infrastructure et organise ou soutient tout au long de l'année des événements. En tant qu'entreprise, nous apportons une activité économique et touristique. Citoyenne rochefortaise, franco-allemande et...européenne: Une enfance passé en Allemagne, des études universitaires en Angleterre, stages &amp; voyages en Italie, cela m'a rendue tout naturellement cosmopolite.                        </p>
-                     </div>
-                   </div>
-                 </li>
-               </ul>
-             </div>
-           </div>
+       <div class="row">
+         <div class="col col-xl-2 col-lg-2 col-sm-12  col-md-12  col-12" style="min-height: 23vh; display: flex;align-items: center; text-align:center;">
          </div>
+         <div class="col col-xl-8 col-lg-8  col-sm-12 col-md-12  col-12" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; min-height: 23vh;">
+             <div class="container" style="font-size: 12px;">
+               <div class="row">
+                 <div class="col-lg-12">
+                   <h3 class="text-center"></h3>
+                   <p>               </p>
+                   <ul class="timeline">
+                     <li>
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>Famille</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     C'est d'abord grâce à ma famille, mon mari tout particulièrement, que j'ai osé réaliser mon rêve de faire mon vin. Leur soutien, leur confiance et leur encouragement m'ont donné la force nécessaire et aussi...des ailes ! Notre fils, né en 2013, participe à sa manière : Aux vendanges il courait d'abord vers les caisses de raisins pour les goûter un par un - contrôle qualité ! Il a découvert le tracteur (sans tourner la clé) et apprécie la ballade dans les vignes et la dégustation..du Jus de Raisin. Notre Domäne a été créé de toutes pièces en 2014 - nous sommes la première génération, pionnière ? Certes, nos ancêtres, des deux côtés, ont cultivé la vigne mais il faut remonter quelques générations et nous voici dans la forêt noire ou en Touraine. Transmission en pointillées...Reste un caractère familial de par la dimension de l'entreprise, l'architecture de la propriété avec une cour commune entre bâtiment agricole et la maison d'habitation ainsi qu'un accueil simple et chaleureux, avec la fameuse vue sur Béhuard avec la Loire, belle par tous les temps. La famille, c'est le cocon qui nous berce, ressource et qui nous voit grandir jour après jour. Qu'il s'agit de protéger et de savourer. Tout comme l'amitié.
+                           </p>
+                         </div>
+                       </div>
+                       <!--<div class="line"></div>-->
+                     </li>
+                     <li class="timeline-inverted">
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>TERROIR</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Mot magique, tellement français que - à ma connaissance - aucune langue sait y mettre un seul mot pour traduire son sens profond. Il y a beaucoup de « terre » dedans. Respect de cette terre, donc d'abord. Une certaine idée de l'écologie. Un terroir que nous cherchons à révéler par notre travail de vigneron. Avec délicatesse et justesse, force &amp; passion. Afin que vous puissiez y goûter. En direct de Rochefort sur Loire, village poétique et dynamique avec vue sur la Loire.
+                            </p>
+                         </div>
+                       </div>
+                      <!-- <div class="line"></div>-->
+                     </li>
+                     <li>
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>PRO</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Le rêve de faire mon vin..et une préparation minutieuse pour le mettre en oeuvre. Montage financier sur la base d'un business plan sur cinq ans. Création d'une entreprise individuelle dès le printemps 2014. Me voici aux commandes. Plongée au quotidien et à plein temps dans la gestion professionnelle d'une entreprise. Passionnant et aussi grisant. Que ce soit la stratégie des investissements, le commerce, la communication, le management, la comptabilité, l'administration, la technique, la gestion de la trésorerie, les ressources humaines,..je m'y attèle avec attention et exigence, appuyée par une belle et compétente équipe de conseillers, fournisseurs, prestataires.                        </p>
+                         </div>
+                       </div>
+                       <!--<div class="line"></div>-->
+                     </li>
+                     <li class="timeline-inverted">
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>METIER</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Vigneron. Métier biblique, gestes millénaires, traditions préservées qui rencontrent des recherches et technologies toutes récentes. Savant équilibre. Métier qui, j'en suis convaincue, s'apprend avant tout en regardant faire un maître...d'apprentissage. En l'écoutant, lui qui connaît son terroir, sa terre, ses vignes, ses vins sur les bouts des doigts depuis des générations. Sur la base d'un DEA de Chimie j'ai choisi un Brevet Professionnel de Responsable d'Entreprise Agricole (BPREA), formation par alternance. Donc toujours immergée dans le travail au quotidien, expérience dans plusieurs vignobles de France &amp; Europe, le chemin mène enfin en Anjou. Je complète l'apprentissage de la production du vin par le diplôme en Commerce &amp; Gestion de l'Ecole Supérieure des Sciences Commerciales d'Angers (ESSCA).
+                           </p>
+                         </div>
+                       </div>
+                       <!--<div class="line"></div>-->
+                     </li>
+                     <li>
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>ENERGIES</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Sujet d'une grande actualité - quelle énergie pour travailler mes vignes, livrer mes clients, me déplacer ? Tracteur ou pas tracteur ?...Pour l'instant, petite cuve à gazole et tracteur vert dans la cour. Travailler le sol avec un cheval dans l'avenir serait envisageable: Mes diplômes d'attelage obtenus au Haras du Pin me permettent d'envisager ce choix technique et le Domäne comprend des belles prairies pour nourrir le cheval. En parallèle j'ai fait le choix d'une voiture 100% électrique pour mes livraisons &amp; déplacements. Afin de favoriser la production d'électricité à partir d'énergies renouvelables, je projette une adhésion à ENERCOOP, fournisseur d'électricité sous forme coopérative.
+                           </p>
+                         </div>
+                       </div>
+                      <!-- <div class="line"></div>-->
+                     </li>
 
 
+                     <li class="timeline-inverted">
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>QUALITE</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Elaborer des produits de qualité, purs et sincères, avec un habillage attractif: respecter la vigne et le vin de la plantation à la dégustation. Et donc respecter celle ou celui qui acquiert mon vin, vous, les clients. D'abord un côté technique : Travailler avec exigence, mettre en place une traçabilité interne et pourquoi pas un contrôle externe (indépendant) : Adhérer à un cahier de charge qui résulte en l'attribution d'un label, signe repère pour le client. J'ai ainsi choisi l'organisme Ecocert pour m'accompagner dans la certification de mon Domäne en Agriculture Biologique. Le second cahier de charge qui me guide est celui géré par l'Institut National des Appellations d'Origine (INAO) : l'AOC. Tout un programme ! Ensuite un côté humain : Etablir une relation de qualité avec tous les interlocuteurs du Domäne : le sens du service et de la satisfaction de mes clients et un échange professionnel &amp; respectueux avec les fournisseurs/prestataires du Domäne.                       </p>
+                         </div>
+                       </div>
+                       <!--<div class="line"></div>-->
+                     </li>
+                     <li>
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>BEAUTE</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Que ce soit dans la vigne, le vin, pour l'habillage bouteille, le papier en-tête ou les cartons de vin, je cherche une harmonie et une certaine beauté. Aussi à une plus grande échelle : La conscience qu'en tant que vigneron, agriculteur nous façonnons le paysage quand nous cultivons nos terres et quand nous aménageons nos bâtiments. Notre chai ainsi que nos vignes sont situés au coeur de sites classés par les Architectes des Bâtiments de France et d'un patrimoine mondial de l'UNESCO... Les chartes associées guident nos choix...dans le noble but de préserver l'esthétique du paysage autour de nous. Dès notre arrivée nous avons inscrit notre propriété en tant que Refuge à la Ligue pour la Protection des Oiseaux (LPO).
+                            </p>
+                         </div>
+                       </div>
+                       <!--<div class="line"></div>-->
+                     </li>
 
-
-
-       </row>
-       <div class="container  col-sm-1 col-md-1 reseauSociaux">
-         <p style="position: relative;top:88px;left:1%; text-align:center;">
-             <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a>
-         </p>
-         <p style="position: relative;top:6px;left:1%; text-align:center;">
-           <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
-         </p>
+                     <li class="timeline-inverted">
+                       <div class="timeline-image">
+                         <img class="img-responsive" src="images/etoile-seule-trans.png" alt="">
+                       </div>
+                       <div class="timeline-panel">
+                         <div class="timeline-heading">
+                           <h4>CITOYEN</h4>
+                           <h4 class="subheading"></h4>
+                         </div>
+                         <div class="timeline-body">
+                           <p class="text-muted">
+     Au-delà de la vigne, la cité : Notre Domäne se situe à Rochefort sur Loire près d'Angers. Telle la vigne dans son terroir, notre entreprise s'est enracinée dans ce beau village dynamique et accueillant. Village qui représente une identité, une origine, la base de la vie publique. Il me semble important d'y participer, de s'intéresser aux actions de la Mairie en collaboration avec les habitants. D'instaurer un dialogue constructif pour faire évoluer la commune, que ce soit en tant que professionnel ou particulier. L'équipe municipale propose une infrastructure et organise ou soutient tout au long de l'année des événements. En tant qu'entreprise, nous apportons une activité économique et touristique. Citoyenne rochefortaise, franco-allemande et...européenne: Une enfance passé en Allemagne, des études universitaires en Angleterre, stages &amp; voyages en Italie, cela m'a rendue tout naturellement cosmopolite.                        </p>
+                         </div>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+         </div>
+         <div class="col col-xl-2 col-lg-2  col-sm-12  col-md-12  col-12" >
+         </div>
+       </div>
      </div>
+   </main>
 
-    </div>
-
-  </main>
-
-
-  <footer class="footer col-md-12    col-xs-12 col-sm-12" >
-      <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter img-src"  style="background-image: url('images/insect_bas.jpeg'); background-position:center bottom;">
-        <div class="row  col-md-2" ></div>
-        <div class="row  col-xs-12 col-sm-12 col-md-10" >
-          <row class="row  col-md-1 notShortScreen"  ></row>
-          <row class="row  col-md-10  col-xs-12 col-sm-12">
-              <p style="color:white;">Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
-              <p style="color:white;">L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
-              <p style="color:white;"><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
-              <p style="color:white;">L'abus d'alcool est dangereux pour la santé, sachez le consommer avec modération</p>
-              <p style="color:white;" id="footer-menu">Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-fins-de-loire.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="presse.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkPresse">Echo</a> &bull; <a href="event.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkEvents">Events</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
-          </row>
-            <row class="row  col-md-1 notShortScreen"  ></row>
-        </div>
-      </div>
-      <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-  </footer>
-
+   <!-- Footer -->
+   <footer >
+     <div class="container-fluid ">
+     	<section id="footer"  style="background-image: url('images/insect_bas.jpeg') !important; background-position:center bottom !important; background-repeat: no-repeat !important;background-size: cover !important;" >
+     		<div class="container">
+     			<div class="row text-center text-xs-center text-sm-left text-md-left">
+     				<div class="col-xs-12 col-sm-12 col-md-12 col-12">
+     					<h5>Plan du site</h5>
+     					<ul class="list-unstyled quick-links">
+     						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Dom&auml;ne</a></li>
+     						<li><a href="valeurs.html"><i class="fa fa-angle-double-right"></i>Valeurs</a></li>
+     						<li><a href="qualitaet.html"><i class="fa fa-angle-double-right"></i>Qualit&auml;t</a></li>
+     						<li><a href="vins-fins-de-loire.html"><i class="fa fa-angle-double-right"></i>Vins</a></li>
+     						<li><a href="presse.html"><i class="fa fa-angle-double-right"></i>Echo</a></li>
+     						<li><a href="event.html"><i class="fa fa-angle-double-right"></i>Events</a></li>
+     						<li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+     						<li><a href="mentions-legales.html"><i class="fa fa-angle-double-right"></i>Mentions l&eacute;gales</a></li>
+     					</ul>
+     				</div>
+     			</div>
+     			<div class="row">
+     				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+     					<ul class="list-unstyled list-inline social text-center" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+     						<li class="list-inline-item"><a href="https://www.facebook.com/DomaeVincendeau/"><i class="fab fa-facebook-f"></i></a></li>
+     						<li class="list-inline-item"><a href="https://twitter.com/DomaeVincendeau"><i class="fab fa-twitter"></i></a></li>
+     						<li class="list-inline-item"><a href="https://www.instagram.com/liv_vincendeau/"><i class="fab fa-instagram"></i></a></li>
+     						<li class="list-inline-item"><a href="https://goo.gl/maps/1ZzjXZ1QBiL2"><i class="fas fa-map-marker-alt"></i></a></li>
+     						<li class="list-inline-item"><a href="mailto:contact@domaenevincendeau.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+     					</ul>
+     				</div>
+     				</hr>
+     			</div>
+     			<div class="row">
+     				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+               <p>Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
+               <p>L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
+               <p>L'abus d'alcool est dangereux pour la sant&eacute;, sachez le consommer avec mod&eacute;ration</p>
+               <p><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created with <i class="fas fa-heart"></i> by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
+               <p class="h6">&copy All right Reversed. Domäne Vincendeau</p>
+     				</div>
+     				</hr>
+     			</div>
+     		</div>
+     	</section>
+     </div>
+   </footer>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
       <!--
@@ -330,9 +330,8 @@
 -->
   </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="  crossorigin="anonymous"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
@@ -348,10 +347,8 @@ function growShrinkLogo() {
   var LogoDiv = document.getElementById("logoDiv");
   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     Logo.className="imgBrandScrolled";
-    LogoDiv.className="LogoDivScrolled";
   } else {
     Logo.className = "imgBrand";
-    LogoDiv.className="LogoDiv";
   }
 }
 </script>
