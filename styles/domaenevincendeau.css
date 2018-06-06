@@ -32,6 +32,7 @@ div{
   width: 90px;
   position : fixed;
   left : 10px;
+  z-index: 95;
 }
 
 .fullwidth{
@@ -51,6 +52,7 @@ div{
   height:300px;
   top:0;
   left:0;
+  z-index: 96;
 }
 .bandeau-container > .img-src{
     height:300px;
