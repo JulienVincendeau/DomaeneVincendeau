@@ -32,22 +32,17 @@
 
 
       <meta name="description" content="Pour toutes informations sur le site, son hébergement et les crédits photos." />
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <!--Effet du menu -->
       <link rel="stylesheet" type="text/css" href="frameworks\CreativeLinkEffects\css\component.css" />
       <!--Definition des couleurs des barres qui vont tourner autour du lien -->
       <link rel="stylesheet" type="text/css" href="styles\myCreativeLinkEffects.css" />
       <!--Déclaration de notre barre de menu bootstrap-->
-      <link rel="stylesheet" type="text/css" href="styles\myBootstrapMenu.css" />
+      <link rel="stylesheet" type="text/css" href="styles\myBootstrapMenu.bs4.css" />
+      <link rel="stylesheet" type="text/css" href="styles\footer.css" />
 
       <!-- fa -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
       <!--Mon identité-->
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
@@ -55,7 +50,7 @@
       <link rel="shortcut icon" href="images/favicon.ico" />
 
     </head>
-  <body class="structureEntete">
+  <body >
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -63,157 +58,165 @@
     <header>
     <div id="navbar-full">
        <div id="navbar">
-          <!--
-           navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
-           -->
-           <nav class="navbar navbar-default navbar-transparent  cl-effect-14 " role="navigation">
-             <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
-             <div class="container  col-xs-10 col-sm-10 col-md-10 ">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
-                    <div class="logo" >
-                       <img src="images\logo-mail.png" class="imgBrand"  id='Logo'>
-                    </div>
-                    <div class="brand">  </div>
-                 </a>
+         <nav class="navbar navbar-expand-lg navbar-light bg-white cl-effect-14"  role="navigation">
+           <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
+           <div class="container  col-xs-10 col-sm-10 col-md-10 ">
+             <a class="navbar-brand navbar-brand-logo" href="http://www.domaenevincendeau.com" style="height: 121px; padding: 0 0 0 0; margin-left: 0px">
+                <div class="logo" >
+                   <img src="images\logo-mail.png" class="imgBrand"  id='Logo'>
+                </div>
+                <div class="brand">  </div>
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+                <div class="navbar-nav   ml-auto">
+                  <a href="index.html" class="nav-item navbar-link lang " key="linkHome">Dom&auml;ne</a>
+                  <a href="valeurs.html" class="nav-item navbar-link lang" key="linkValeurs">Valeurs</a>
+                  <a href="qualitaet.html" class="nav-item navbar-link lang" key="linkQualitaet">Qualit&auml;t</a>
+                  <a href="vins-fins-de-loire.html" class="nav-item navbar-link lang" key="linkVins">Vins</a>
+                  <a href="presse.html" class="nav-item navbar-link lang" key="linkPresse">Echo</a>
+                  <a href="event.html" class="nav-item  nav-item navbar-link lang " key="linkEvents">Events</a>
+                  <a href="contact.php" class="nav-item navbar-link lang" key="linkContact">Contact</a>
                </div>
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                 <ul class="nav navbar-nav navbar-right"  style="margin-right: 0px;">
-                   <li><a href="index.html" class="navbar-link lang" key="linkHome">Dom&auml;ne</a></li>
-                   <li><a href="valeurs.html" class="navbar-link lang" key="linkValeurs">Valeurs</a></li>
-                   <li><a href="qualitaet.html" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a></li>
-                   <li><a href="vins-fins-de-loire.html" class="navbar-link lang" key="linkVins">Vins</a></li>
-                   <li><a href="presse.html" class="navbar-link lang" key="linkPresse">Echo</a></li>
-                   <li><a href="event.html" class="nav-item  nav-item navbar-link lang" key="linkEvents">Events</a></li>
-                   <li><a href="contact.php" class="navbar-link lang" key="linkContact">Contact</a></li>
-                 </ul>
-               </div><!-- /.navbar-collapse -->
-             </div><!-- /.container-fluid -->
-             <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
-           </nav>
+              </div>
+            </div><!-- /.container-fluid -->
+            <div class="container  col-xs-1 col-sm-1 col-md-1"></div>
+          </nav>
        </div><!--  end navbar -->
 
    </div> <!-- end menu-dropdown -->
- </header>
-  <main>
-    <section id="etoilesBckg" >
-  	<!--	<img src="images/etoile grande.jpg" alt="" title="" style="top: -195px; height: 647px; right: -451px; position: absolute; z-index: -5;" />
-  			<img src="images/etoile petite.jpg" alt="" title="" style="left: -517px; top: 175px; height: 279px; position: absolute; z-index: -5;" />-->
-  	</section>
+   </header>
 
-    <div class="container col-xs-1 col-sm-1 col-md-1"></div>
-    <div class="main col-xs-10 col-sm-10 col-md-10">
-       <row class="bandeau-container  col-xs-12 col-sm-12 col-md-12" style="padding-right:0px; padding-left:0px;">
-             <div class="img-src" style="background-image: url('images/Travail Vignes Cheval.jpg')"></div>
-       </row>
+     <main>
+       <div class="main container-fluid ">
+         <row class="bandeau-container  container-fluid" >
+           <div class="img-src" style="background-image: url('images/Travail Vignes Cheval.jpg'); background-position:center middle;"></div>
+         </row>
+         <div class="row">
+           <div class="col col-xl-2 col-lg-2 col-sm-12  col-md-12  col-12" style="min-height: 23vh; display: flex;align-items: center; text-align:center;">
+           </div>
+           <div class="col col-xl-8 col-lg-8  col-sm-12 col-md-12  col-12" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; min-height: 23vh;">
 
-       <div class="container  col-md-2"></div>
-       <row class="container  col-xs-12 col-sm-10 col-md-8" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;padding-top:15px;">
-         <div class="txtGris" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;">
-         		<p><b>Domäne Vincendeau</b>
-         			<br/>Domaine viticole, immatriculé au répertoire des numéros individuels d'identification fiscale : numéro de TVA intracommunautaire FR77801680513.
-         			<br/>Les informations recueillies font l'objet d'un traitement informatique destiné à répondre aux demandes de renseignements. Le destinataire des données est le Service Contact du Domäne Vincendeau.
-         			<br/>Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant au
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Domäne Vincendeau
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L'Enclos
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route de Port Godard
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les Lombardières
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49190 Rochefort-sur-Loire
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:contact@domaenevincendeau.com" style="text-decoration:none;" class="txtGris">contact@domaenevincendeau.com</a>
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+33241572115" style="text-decoration:none;" class="txtGris">Téléphone 02 41 57 21 15</a>
-         			    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Téléfax 02 41 57 21 15
-         				<br/>
-         				<br/>Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.
-         		</p>
+             <div class="txtGris" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word;">
+                <p><b>Domäne Vincendeau</b>
+                  <br/>Domaine viticole, immatriculé au répertoire des numéros individuels d'identification fiscale : numéro de TVA intracommunautaire FR77801680513.
+                  <br/>Les informations recueillies font l'objet d'un traitement informatique destiné à répondre aux demandes de renseignements. Le destinataire des données est le Service Contact du Domäne Vincendeau.
+                  <br/>Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant au
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Domäne Vincendeau
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L'Enclos
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route de Port Godard
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les Lombardières
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49190 Rochefort-sur-Loire
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:contact@domaenevincendeau.com" style="text-decoration:none;" class="txtGris">contact@domaenevincendeau.com</a>
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+33241572115" style="text-decoration:none;" class="txtGris">Téléphone 02 41 57 21 15</a>
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Téléfax 02 41 57 21 15
+                    <br/>
+                    <br/>Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.
+                </p>
 
-         		<p><b>Propriété intellectuelle</b>
-         			<br/>L'ensemble du contenu de ce site est la propriété du Domäne Vincendeau. Les bases de données développées sont la propriété exclusive du Domäne Vincendeau.
-         			<br/>© Copyright 2015 Julien Vincendeau pour le Domäne Vincendeau - Tous droits réservés
-         			<br/>Les logos, marques et visuels cités sur ce site appartiennent à leurs propriétaires respectifs et sont déposés auprès de l'Institut National de la Propriété Industrielle.
-         		</p>
+                <p><b>Propriété intellectuelle</b>
+                  <br/>L'ensemble du contenu de ce site est la propriété du Domäne Vincendeau. Les bases de données développées sont la propriété exclusive du Domäne Vincendeau.
+                  <br/>© Copyright 2015 Julien Vincendeau pour le Domäne Vincendeau - Tous droits réservés
+                  <br/>Les logos, marques et visuels cités sur ce site appartiennent à leurs propriétaires respectifs et sont déposés auprès de l'Institut National de la Propriété Industrielle.
+                </p>
 
 
-         		<p><b>Crédits Photos</b>
-              <br/><i>Rubrique Domäne : </i>Josselin CLAIR pour Le Courrier de l'Ouest
-              <br/><i>Rubrique Valeur : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
-              <br/><i>Rubrique Quälitat : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
-              <br/><i>Rubrique Vins : </i>Domäne Vincendeau
-              <br/><i>Rubrique Echo : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
-              <br/><i>Rubrique Events : </i>Josselin CLAIR pour Le Courrier de l'Ouest
-              <br/><i>Rubrique Contact : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
-              <br /><i>Rubrique Mentions Légales : </i>Domäne Vincendeau
-            </p>
+                <p><b>Crédits Photos</b>
+                  <br/><i>Rubrique Domäne : </i>Josselin CLAIR pour Le Courrier de l'Ouest
+                  <br/><i>Rubrique Valeur : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
+                  <br/><i>Rubrique Quälitat : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
+                  <br/><i>Rubrique Vins : </i>Domäne Vincendeau
+                  <br/><i>Rubrique Echo : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
+                  <br/><i>Rubrique Events : </i>Josselin CLAIR pour Le Courrier de l'Ouest
+                  <br/><i>Rubrique Contact : </i><a href="https://www.flickr.com/photos/chachoumadeinjapan/" target="_blank" style="color: inherit;">Charlotte Hubert Photography</a>
+                  <br /><i>Rubrique Mentions Légales : </i>Domäne Vincendeau
+                </p>
 
-         		<p><b>Droits de reproduction</b>
-         		<br/>Conformément aux dispositions des articles L. 122-4 et L. 335.2 du Code de la propriété intellectuelle, la reproduction ou la représentation partielle ou totale du site ou de son contenu est interdite sans autorisation écrite et préalable du Dirigeant du Domäne Vincendeau.
-         		</p>
+                <p><b>Droits de reproduction</b>
+                <br/>Conformément aux dispositions des articles L. 122-4 et L. 335.2 du Code de la propriété intellectuelle, la reproduction ou la représentation partielle ou totale du site ou de son contenu est interdite sans autorisation écrite et préalable du Dirigeant du Domäne Vincendeau.
+                </p>
 
-         		<p><b>Liens</b>
-         		<br/>Le site propose des liens vers des sites sur lesquels le Domäne Vincendeau n'exerce aucun contrôle. Le Domäne Vincendeau dégage toute responsabilité quant au contenu de ces sites.
-         		</p>
+                <p><b>Liens</b>
+                <br/>Le site propose des liens vers des sites sur lesquels le Domäne Vincendeau n'exerce aucun contrôle. Le Domäne Vincendeau dégage toute responsabilité quant au contenu de ces sites.
+                </p>
 
-         		<p><b>Mise en garde générale</b>
-         		<br/>Le Domäne Vincendeau ne saurait être responsable des dommages qui pourraient résulter de l'accès ou de l'utilisation du site, incluant toutes détériorations ou virus qui pourraient infecter votre équipement informatique ou tout autre bien. Bien que s'efforçant raisonnablement de mettre à jour les informations précises publiées sur le site, le Domäne Vincendeau ne saurait être tenue pour responsable de toute erreur ou omission.
-         		</p>
+                <p><b>Mise en garde générale</b>
+                <br/>Le Domäne Vincendeau ne saurait être responsable des dommages qui pourraient résulter de l'accès ou de l'utilisation du site, incluant toutes détériorations ou virus qui pourraient infecter votre équipement informatique ou tout autre bien. Bien que s'efforçant raisonnablement de mettre à jour les informations précises publiées sur le site, le Domäne Vincendeau ne saurait être tenue pour responsable de toute erreur ou omission.
+                </p>
 
-         		<p><b>Modifications des conditions</b>
-         		<br/>Le Domäne Vincendeau se réserve le droit de modifier ou de façon plus générale, d'actualiser les présentes conditions générales à tout moment et sans préavis. C'est pourquoi nous vous invitons à les consulter régulièrement.
-         		</p>
+                <p><b>Modifications des conditions</b>
+                <br/>Le Domäne Vincendeau se réserve le droit de modifier ou de façon plus générale, d'actualiser les présentes conditions générales à tout moment et sans préavis. C'est pourquoi nous vous invitons à les consulter régulièrement.
+                </p>
 
-         		<p><b>Création</b>
-         		<br/>Le site a été developpé avec l'outil <a href="https://atom.io/" target="_blank" style="color: inherit;">Atom</a>.
-         		<br/>Développeur : <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="color: inherit;">Julien Vincendeau</a>.
-         		<br/>vins-fins-de-loire.html, les effets sur les étiquettes inspiré de : PFold, source  http://tympanus.net/Development/PFold/
-         		<br/>Le design du site a été créé par <a href="http://zougraphiste.com/" target="_blank" style="color: inherit;"> zOugraphiste.com </a> pour le Domäne Vincendeau.
-         		</p>
+                <p><b>Création</b>
+                <br/>Le site a été developpé avec l'outil <a href="https://atom.io/" target="_blank" style="color: inherit;">Atom</a>.
+                <br/>Développeur : <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="color: inherit;">Julien Vincendeau</a>.
+                <br/>vins-fins-de-loire.html, les effets sur les étiquettes inspiré de : PFold, source  http://tympanus.net/Development/PFold/
+                <br/>Le design du site a été créé par <a href="http://zougraphiste.com/" target="_blank" style="color: inherit;"> zOugraphiste.com </a> pour le Domäne Vincendeau.
+                </p>
 
-         		<p><b>Hébergement</b>
-         		<br/>Les sites www.domaenevincendeau.com, www.domänevincendeau.com et wwww.domainevincendeau.com sont hébergés par la <a href="http://www.ovh.com/fr/hebergement-web/" target="_blank" style="color: inherit;">Société OVH</a>.
-         		</p>
+                <p><b>Hébergement</b>
+                <br/>Les sites www.domaenevincendeau.com, www.domänevincendeau.com et wwww.domainevincendeau.com sont hébergés par la <a href="http://www.ovh.com/fr/hebergement-web/" target="_blank" style="color: inherit;">Société OVH</a>.
+                </p>
 
-             </div>
-       </row>
-       <div class="container  col-sm-1 col-md-1"></div>
-       <div class="container  col-sm-1 col-md-1 reseauSociaux">
-         <p style="position: relative;top:88px;left:1%; text-align:center;">
-             <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fa fa-twitter fa-2x" style="color:#009cac"></i> </a>
-         </p>
-         <p style="position: relative;top:6px;left:1%; text-align:center;">
-           <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fa fa-facebook fa-2x" style="color:#009cac"></i> </a>
-         </p>
-     </div>
+                 </div>
 
-    </div>
+           </div>
+           <div class="col col-xl-2 col-lg-2  col-sm-12  col-md-12  col-12" >
+           </div>
+         </div>
+       </div>
+     </main>
 
-    <div class="container col-xs-1 col-sm-1 col-md-1"></div>
-  </main>
-
-  <footer class="footer col-md-12    col-xs-12 col-sm-12" >
-      <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-      <div class="container  col-md-10  col-xs-10 col-sm-10 sectionFooter">
-        <div class="row  col-md-2" ></div>
-        <div class="row  col-xs-12 col-sm-12 col-md-10" >
-          <row class="row  col-md-1 notShortScreen"  ></row>
-          <row class="row  col-md-10  col-xs-12 col-sm-12">
-              <p style="color:white;">Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
-              <p style="color:white;">L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
-              <p style="color:white;"><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
-              <p style="color:white;">L'abus d'alcool est dangereux pour la santé, sachez le consommer avec modération</p>
-              <p style="color:white;" id="footer-menu">Plan du site : <a href="index.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkHome">Dom&auml;ne</a> &bull; <a href="valeurs.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkValeurs">Valeurs</a> &bull; <a href="qualitaet.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkQualitaet">Qualit&auml;t</a> &bull; <a href="vins-fins-de-loire.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkVins">Vins</a> &bull; <a href="presse.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkPresse">Echo</a> &bull; <a href="event.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkEvents">Events</a> &bull; <a href="contact.php" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkContact">Contact</a> &bull; <a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a></p>
-            </row>
-            <row class="row  col-md-1 notShortScreen"  ></row>
-        </div>
-      </div>
-      <div class="container  col-md-1 col-xs-1 col-sm-1" ></div>
-  </footer>
+     <!-- Footer -->
+     <footer >
+       <div class="container-fluid ">
+       	<section id="footer"  style="background-image: url('') !important; background-position:center bottom !important; background-repeat: no-repeat !important;background-size: cover !important;" >
+       		<div class="container">
+       			<div class="row text-center text-xs-center text-sm-left text-md-left">
+       				<div class="col-xs-12 col-sm-12 col-md-12 col-12">
+       					<h5>Plan du site</h5>
+       					<ul class="list-unstyled quick-links">
+       						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Dom&auml;ne</a></li>
+       						<li><a href="valeurs.html"><i class="fa fa-angle-double-right"></i>Valeurs</a></li>
+       						<li><a href="qualitaet.html"><i class="fa fa-angle-double-right"></i>Qualit&auml;t</a></li>
+       						<li><a href="vins-fins-de-loire.html"><i class="fa fa-angle-double-right"></i>Vins</a></li>
+       						<li><a href="presse.html"><i class="fa fa-angle-double-right"></i>Echo</a></li>
+       						<li><a href="event.html"><i class="fa fa-angle-double-right"></i>Events</a></li>
+       						<li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+       						<li><a href="mentions-legales.html"><i class="fa fa-angle-double-right"></i>Mentions l&eacute;gales</a></li>
+       					</ul>
+       				</div>
+       			</div>
+       			<div class="row">
+       				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+       					<ul class="list-unstyled list-inline social text-center" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+       						<li class="list-inline-item"><a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+       						<li class="list-inline-item"><a href="https://twitter.com/DomaeVincendeau" target="_blank"><i class="fab fa-twitter"></i></a></li>
+       						<li class="list-inline-item"><a href="https://www.instagram.com/liv_vincendeau/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+       						<li class="list-inline-item"><a href="https://goo.gl/maps/1ZzjXZ1QBiL2" target="_blank"><i class="fas fa-map-marker-alt"></i></a></li>
+       						<li class="list-inline-item"><a href="mailto:contact@domaenevincendeau.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+       					</ul>
+       				</div>
+       				</hr>
+       			</div>
+       			<div class="row">
+       				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                 <p>Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
+                 <p>L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
+                 <p>L'abus d'alcool est dangereux pour la sant&eacute;, sachez le consommer avec mod&eacute;ration</p>
+                 <p><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created with <i class="fas fa-heart"></i> by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
+                 <p class="h6">&copy All right Reversed. Domäne Vincendeau</p>
+       				</div>
+       				</hr>
+       			</div>
+       		</div>
+       	</section>
+       </div>
+     </footer>
+     <!-- ./Footer -->
 
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -240,9 +243,9 @@
 -->
   </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="  crossorigin="anonymous"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <script src="js\mytranslate.js"></script>
 <script src="js\translate.menu.js"></script>
