@@ -238,10 +238,12 @@ if($_POST["submit"]) {
 
            		<p style="font-weight: bolder;" >
            			<div style="font-size:large; color:#009cac;" ><b>fon &bull; fax 02 41 57 21 15</b></div>
-           			<div>mail : contact@domaenevincendeau.com </div>
+           			<div>mail : contact@domaenevincendeau.com </div><br>
                 <div >
                     <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fab fa-twitter fa-2x" style="color:#009cac"></i> </a> &nbsp;
-                    <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fab fa-facebook fa-2x" style="color:#009cac"></i> </a>
+                    <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fab fa-facebook fa-2x" style="color:#009cac"></i> </a> &nbsp;
+                    <a href="https://www.instagram.com/liv_vincendeau/" target="_blank"> <i class="fab fa-instagram fa-2x" style="color:#009cac"></i> </a> &nbsp;
+                    <a href="https://goo.gl/maps/1ZzjXZ1QBiL2" target="_blank"> <i class="fas fa-map-marker-alt fa-2x" style="color:#009cac"></i> </a>
                 </div>
            		</p>
 
