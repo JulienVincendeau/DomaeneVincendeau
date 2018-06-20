@@ -121,6 +121,7 @@ if($_POST["submit"]) {
       <link rel="shortcut icon" href="images/favicon.ico" />
 
 
+      <link rel="canonical" href="http://www.domaenevincendeau.com/event.html" />
     </head>
   <body class="structureEntete">
     <!--[if lte IE 8]>
