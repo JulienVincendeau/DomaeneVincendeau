@@ -72,9 +72,6 @@ section .section-title {
 }
 
 @media (max-width:767px){
-  i.fa.fa-angle-double-right{
-    display: none;
-  }
   #footer{
     background: #676b6e !important;
   }
@@ -83,5 +80,11 @@ section .section-title {
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
-}
+  }
+  #footer .list-unstyled{
+    display: contents;
+  }
+  #footer .row{
+    padding-bottom: 3em;
+  }
 }
