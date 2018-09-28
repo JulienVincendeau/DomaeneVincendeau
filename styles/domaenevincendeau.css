@@ -63,7 +63,7 @@ div{
 
 /** Mes cadres de pr�sentation dans la page **/
 .sectionCentree{
-  width: 750px;
+  width: 60%;
 	border: 1px solid /*cyan*/ none;
 	margin: auto; /* On peut donc demander � ce que le bloc soit centr� avec auto */
 	clear:both;
@@ -136,11 +136,11 @@ input, textarea, select, option {
  }
 input, textarea, select {
 	font-family: Open sans, monOpenSans;
- padding:5px;
+ padding:10px;
  width:100%;
- border:1px solid #e9e9e9;
- border-radius:5px;
- box-shadow:1px 1px 3px #d4d4d4 inset;
+ border:none;
+ border-radius:0px;
+ box-shadow:0px -2px 1px #d4d4d4 inset;
  }
 select {
  margin-top:10px;
@@ -181,6 +181,10 @@ input[type=submit], input[type=reset] {
   }
   .shortScreen{
     display: block;
+  }
+  /** Mes cadres de pr�sentation dans la page **/
+  .sectionCentree{
+    width: 100%;
   }
 }
 

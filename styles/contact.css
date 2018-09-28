@@ -1,0 +1,83 @@
+figure
+{
+  float: left;
+  margin: 0 0px 0 0;
+  background: transparent;
+  border: 0px solid white;
+  /*-webkit-box-shadow: 0 3px 10px #ccc;
+  -moz-box-shadow: 0 3px 10px #ccc;
+  -o-box-shadow: 0 3px 10px #ccc;*/
+
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg); /* Saf3.1 , Chrome */
+  -moz-transform: rotate(5deg); /* FF3.5 */
+  -o-transform: rotate(5deg); /* Opera 10.5 */
+  -ms-transform: rotate(5deg);   /* Internet Explorer */
+
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+   transition: all 1s ease;
+        max-width: 100%;
+
+  position: relative;
+}
+
+figcaption
+{
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+}
+figure:hover
+{
+  -webkit-transform: rotate(-1deg); -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg); -ms-transform: rotate(1deg);
+
+  transform: scale(1.50);
+  -webkit-transform:scale(1.50); /* Safari and Chrome */
+  -moz-transform:scale(1.50); /* Firefox */
+  -ms-transform:scale(1.50); /* IE 9 */
+  -o-transform:scale(1.50); /* Opera */
+   z-index: 99;
+
+ /* -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
+  -o-box-shadow: 0 3px 10px #666; -ms-box-shadow: 0 3px 10px #666;*/
+}
+
+img#plan{
+  height: 350px; float: left;
+}
+.rs{
+  margin: 2em;
+}
+
+@media screen and (max-width: 850px) {
+  figure
+  {
+    float: left;
+    margin: 0 0px 0 0;
+    background: transparent;
+    border: 0px solid white;
+
+    position: relative;
+  }
+  figure:hover
+  {
+    -webkit-transform: none; -moz-transform: none;
+    -o-transform: none; -ms-transform: none;
+
+    transform: none;
+    -webkit-transform:none; /* Safari and Chrome */
+    -moz-transform:none; /* Firefox */
+    -ms-transform:none; /* IE 9 */
+    -o-transform:none; /* Opera */
+     z-index: 99;
+
+   /* -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
+    -o-box-shadow: 0 3px 10px #666; -ms-box-shadow: 0 3px 10px #666;*/
+  }
+
+}

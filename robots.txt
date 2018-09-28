@@ -9,7 +9,6 @@ Sitemap: http://domaenevincendeau.com/sitemap2.xml
 #content
 Allow : /revue-presse
 Allow : /images
-
-Disallow: /frameworks
-Disallow: /js
-Disallow: /styles
+Allow: /frameworks
+Allow: /js
+Allow: /styles

@@ -118,56 +118,8 @@ if($_POST["submit"]) {
       <link rel="shortcut icon" href="images/favicon.ico" />
 
 
-      <style type="text/css">
-      figure
-      {
-        float: left;
-        margin: 0 0px 0 0;
-        background: transparent;
-        border: 0px solid white;
-        /*-webkit-box-shadow: 0 3px 10px #ccc;
-        -moz-box-shadow: 0 3px 10px #ccc;
-        -o-box-shadow: 0 3px 10px #ccc;*/
-
-        -webkit-transform: rotate(5deg); /* Saf3.1 , Chrome */
-        -moz-transform: rotate(5deg); /* FF3.5 */
-        -o-transform: rotate(5deg); /* Opera 10.5 */
-        -ms-transform: rotate(5deg);   /* Internet Explorer */
-
-        -webkit-transition: all 0.7s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-         transition: all 1s ease;
-              max-width: 100%;
-
-        position: relative;
-      }
-
-      figcaption
-      {
-        text-align: center;
-        display: block;
-        font-size: 12px;
-        font-style: italic;
-      }
-      figure:hover
-      {
-        -webkit-transform: rotate(-1deg); -moz-transform: rotate(1deg);
-        -o-transform: rotate(1deg); -ms-transform: rotate(1deg);
-
-        webkit-transform:scale(1.50); /* Safari and Chrome */
-          -moz-transform:scale(1.50); /* Firefox */
-          -ms-transform:scale(1.50); /* IE 9 */
-          -o-transform:scale(1.50); /* Opera */
-           transform:scale(1.50);
-             z-index: 99;
-
-       /* -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
-        -o-box-shadow: 0 3px 10px #666; -ms-box-shadow: 0 3px 10px #666;*/
-      }
-
-      </style>
+      <!-- Spécificté de contat.php -->
+      <link rel="stylesheet" type="text/css" href="styles\contact.css" />
 
 
 
@@ -217,13 +169,11 @@ if($_POST["submit"]) {
          <div class="img-src" style="background-image: url('images/watching_haut.jpeg'); background-position:center bottom;"></div>
        </row>
        <div class="row">
-         <div class="col col-xl-2 col-lg-2 col-sm-12  col-md-12  col-12" style="mdisplay: flex;align-items: center; text-align:center;">
+         <div class="col col-xl-2 col-lg-2 col-sm-12  col-md-12  col-12" style="display: flex;align-items: center; text-align:center;">
          </div>
          <div class="col col-xl-8 col-lg-8  col-sm-12 col-md-12  col-12" style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; min-height: 23vh;">
 
            <article class="container   col-xs-12 col-sm-10 col-md-8" style="position: relative; z-index: 99; top: -24px;">
-             	<table style="width: 102%;margin-top: 35px;"><tr>
-             	<td>
            	    <div style="text-align: justify; vertical-align:top;  border: none; word-wrap: break-word; float:left;">
            		  <p >
            			Envie de d&eacute;guster nos vins, nous rencontrer, visiter le dom&auml;ne ?<br/>
@@ -240,10 +190,10 @@ if($_POST["submit"]) {
            			<div style="font-size:large; color:#009cac;" ><b>fon &bull; fax 02 41 57 21 15</b></div>
            			<div>mail : contact@domaenevincendeau.com </div><br>
                 <div >
-                    <a href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fab fa-twitter fa-2x" style="color:#009cac"></i> </a> &nbsp;
-                    <a href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fab fa-facebook fa-2x" style="color:#009cac"></i> </a> &nbsp;
-                    <a href="https://www.instagram.com/liv_vincendeau/" target="_blank"> <i class="fab fa-instagram fa-2x" style="color:#009cac"></i> </a> &nbsp;
-                    <a href="https://goo.gl/maps/1ZzjXZ1QBiL2" target="_blank"> <i class="fas fa-map-marker-alt fa-2x" style="color:#009cac"></i> </a>
+                    <a class="rs" href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fab fa-twitter fa-2x" style="color:#009cac"></i> </a> &nbsp;
+                    <a class="rs" href="https://www.facebook.com/DomaeVincendeau/" target="_blank"> <i class="fab fa-facebook fa-2x" style="color:#009cac"></i> </a> &nbsp;
+                    <a class="rs" href="https://www.instagram.com/liv_vincendeau/" target="_blank"> <i class="fab fa-instagram fa-2x" style="color:#009cac"></i> </a> &nbsp;
+                    <a class="rs" href="https://goo.gl/maps/1ZzjXZ1QBiL2" target="_blank"> <i class="fas fa-map-marker-alt fa-2x" style="color:#009cac"></i> </a>
                 </div>
            		</p>
 
@@ -251,17 +201,14 @@ if($_POST["submit"]) {
            			A bient&ocirc;t / Bis bald !
            		</p>
                </div>
-           	</td>
-           	<td style="text-align: center; ">
-           		<div >
-           		<figure  contenteditable="false" style="height: auto;">
-           		<img src="images/plan-domaene-vincendeauV3-HD-trans.png" alt="Plan d\'accès au Domäne Vincendeau"  contenteditable="false" style="height: 350px; float: left;"/>
-           		<!-- <figcaption contenteditable="false" style="visibility: hidden;">Plan d'acc�s au Dom�ne Vincendeau</figcaption>-->
-           		</figure>
-           		</div>
-           	</td>
-           	</tr>	</table>
          	</article>
+
+         <div >
+         <figure  contenteditable="false" style="height: auto;">
+         <img id="plan" src="images/plan-domaene-vincendeauV3-HD-trans.png" alt="Plan d\'accès au Domäne Vincendeau"  contenteditable="false"/>
+         <!-- <figcaption contenteditable="false" style="visibility: hidden;">Plan d'acc�s au Dom�ne Vincendeau</figcaption>-->
+         </figure>
+         </div>
 
 
           <section id="thankyou" style="position: relative; z-index: 5; top: 0px;">
@@ -271,10 +218,10 @@ if($_POST["submit"]) {
           <section >
           <article class="sectionCentree" style="position: relative; z-index: 5; top: 0px;">
                   <form method="post" action="contact.php#thankyou">
-                    <fieldset  style="width:70%; border: none; float:left;">
-                      <input type="text" required id="nom" name="sender" style="width: 100%;" placeholder="nom" /><br/>
-                      <input type="email" required id="nom" name="senderEmail" style="width: 100%;" placeholder="Adresse email" /><br/>
-                      <input type="text" required id="sujet" name="subject" style="width: 100%;" placeholder="sujet" /><br/>
+                    <fieldset  style="width:70%; border: none; ">
+                      <input type="text" required id="nom" name="sender"  placeholder="nom" /><br/>
+                      <input type="email" required id="nom" name="senderEmail"  placeholder="Adresse email" /><br/>
+                      <input type="text" required id="sujet" name="subject"  placeholder="sujet" /><br/>
                       <textarea rows="" cols="" required id="message"   name="message" placeholder="message" ></textarea><br/>
                       <input type="submit" name="submit" value="envoyer" />
                     </fieldset>
