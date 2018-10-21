@@ -182,12 +182,12 @@ if($_POST["submit"]) {
            		  </p>
            		  <p><b>Dom&auml;ne Vincendeau</b></p>
            		  <p>
-           			      L'Enclos &bull; Route de Port Godard<br/>
-           			       Les Lombardières 49190 Rochefort sur Loire &bull; France
+           			      228 Route de Port Godard<br/>
+           			       Les Lombardières &bull; 49190 Rochefort sur Loire &bull; France
            		  </p>
 
            		<p style="font-weight: bolder;" >
-           			<div style="font-size:large; color:#009cac;" ><b>fon &bull; fax 02 41 57 21 15</b></div>
+           			<div style="font-size:large; color:#009cac;" ><b>+33 (0)2 41 57 21 15</b></div>
            			<div>mail : contact@domaenevincendeau.com </div><br>
                 <div >
                     <a class="rs" href="https://twitter.com/DomaeVincendeau" target="_blank"> <i class="fab fa-twitter fa-2x" style="color:#009cac"></i> </a> &nbsp;
@@ -269,11 +269,11 @@ if($_POST["submit"]) {
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-               <p>Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp;fon &bull; fax <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >02 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
-               <p>L'Enclos &bull; Route de Port Godard &bull; Les Lombardi&egrave;res 49190 Rochefort sur Loire &bull; France</p>
+               <p>Dom&auml;ne Vincendeau <b style="font-weight: bolder;">&nbsp; <a href="tel:+33241572115" style="text-decoration: none; color: inherit;" >+33 (0)2 41 57 21 15</a>&nbsp;</b> <a href="mailto:contact@domaenevincendeau.com" style="text-decoration: none; color: inherit;" >contact@domaenevincendeau.com</a></p>
+               <p>228 Route de Port Godard &bull; Les Lombardi&egrave;res &bull; 49190 Rochefort sur Loire &bull; France</p>
                <p>L'abus d'alcool est dangereux pour la sant&eacute;, sachez le consommer avec mod&eacute;ration</p>
                <p><a href="mentions-legales.html" style="text-decoration: none; color: inherit;" class="navbar-link lang" key="linkMentions">Mentions l&eacute;gales</a> - @2014 Designed by<a href="http://zougraphiste.com/" target="_blank" style="text-decoration: none; color: inherit;"> zOugraphiste.com </a>&bull; Created with <i class="fas fa-heart"></i> by <a href="https://fr.linkedin.com/in/julienvincendeau" target="_blank" style="text-decoration: none; color: inherit;" >Julien Vincendeau</a></p>
-               <p class="h6">&copy All right Reversed. Domäne Vincendeau</p>
+               <p class="h6">&copy All right Reserved. Domäne Vincendeau</p>
             </div>
             </hr>
           </div>
