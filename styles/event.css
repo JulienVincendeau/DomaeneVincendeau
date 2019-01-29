@@ -1,0 +1,96 @@
+/* event */
+.circle {
+padding: 13px 20px;
+border-radius: 10%;
+background-color: #4c585d;
+color: #fff;
+/*max-height: 50px;*/
+z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+content: "";
+position: absolute;
+border-left: 3px solid #4c585d;
+z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+height: 50%;
+left: calc(50% - 3px);
+top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+height: 100%;
+left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+height: 50%;
+left: calc(50% - 3px);
+top: 0;
+}
+
+
+.timeline div {
+padding: 0;
+height: 40px;
+}
+.timeline hr {
+border-top: 3px solid #4c585d;
+margin: 0;
+top: 17px;
+position: relative;
+}
+.timeline .col-2 {
+display: flex;
+overflow: hidden;
+}
+.timeline .corner {
+border: 3px solid #4c585d;
+width: 100%;
+position: relative;
+border-radius: 15px;
+}
+.timeline .top-right {
+left: calc(50% - 3px);
+top: -50%;
+}
+.timeline .left-bottom {
+left: -50%;
+top: calc(50% - 3px);
+}
+.timeline .top-left {
+left: -50%;
+top: -50%;
+}
+.timeline .right-bottom {
+left: calc(50% - 3px);
+top: calc(50% - 3px);
+}
+h5 a{
+text-decoration: underline; color: inherit;
+}
+img.img-responsive{
+width: auto;
+height: 8em;
+border-radius: 10%;
+}
+a.importo{
+text-decoration: none;
+}
+@media screen and (max-width: 850px) {
+img.img-responsive{
+  height: 6em;
+}
+.circle{
+  padding: 10px 10px;
+}
+.how-it-works.row{
+  font-size: 13px;
+}
+h5{
+  font-size: 1rem;
+}
+}
