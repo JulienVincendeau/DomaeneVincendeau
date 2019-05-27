@@ -4,7 +4,7 @@ User-agent: *
 
 # SiteMap
 Sitemap: http://www.domaenevincendeau.com/sitemap.xml
-Sitemap: http://domaenevincendeau.com/sitemap2.xml
 
 #content
 Allow : /
+Disallow : /revue-presse
