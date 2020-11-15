@@ -161,24 +161,20 @@
 
  <br><br>
 
- <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-   Modal with blur effect
- </button>-->
  <!-- Modal -->
-<!--
- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-   <div class="container">
-     <div class="row">
-       <div class="col-sm-6 col-sm-offset-3 text-center">
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
-         <br><br><br /><br />
-          <img src="images\DomäneNight 2017 _REPORTE_.jpg" alt="Portes Ouvertes au Domäne Vincendeau le 09 décembre 2017 - REPORTE" style="width:100%;">
-         <hr>
-       </div>
+ <div class="modal fade text-center"  id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-mg" role="document">
+         <div class="modal-content">
+             <div class="modal-body">
+                  <h3>Nouveau service ..</h3>
+                  <p style="background-color: rgba(255, 255, 255, 0.7); padding: 5px 5px 5px 5px;">
+                     <img src="images/Achetez votre vin Ici.png" alt="Service COVID : Call & Collect" class="imgPinBoot" style="width: 100%">
+                   </p>
+             </div>
+         </div>
      </div>
-   </div>
  </div>
--->
+
 </main>
 
 <!-- Footer -->
@@ -229,21 +225,6 @@
 </footer>
 <!-- ./Footer -->
 
-
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-      <!--
-       <script>
-         !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-         (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-         r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-         }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-         ga('create', 'UA-XXXXX-X');
-         ga('send', 'pageview');
-      </script>
-  -->
-
-
 <!--
   <div class="container  col-md-12    col-xs-12 col-sm-12">
       <button class="translate" id="en">English</button>
@@ -267,20 +248,15 @@
 
 <!--ouverture du Modal-->
 <script type="text/javascript">
-    $(window).on('load',function(){
-        $('#myModal').modal('show');
-    });
+$(window).on('load', function() {
+	 setTimeout(function(){
+	   $('#subscribeModal').modal('show');
+   }, 1000);
+});
+$('#Reloadpage').click(function() {
+    location.reload();
+});
 </script>
-<!--fermeture modal-->
-<script type="text/javascript">
-  $("body").on("click", ".modal-dialog", function(e) {
-       if ($(e.target).hasClass('modal-dialog')) {
-           var hidePopup = $(e.target.parentElement).attr('id');
-           $('#' + hidePopup).modal('hide');
-       }
-   });
-</script>
-
 
 
 <script>

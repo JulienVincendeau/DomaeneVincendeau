@@ -1,15 +1,10 @@
-body.modal-open #wrap{
-    -webkit-filter: blur(7px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
+#subscribeModal .modal-content{
+	overflow:hidden;
 }
 
-.modal-backdrop {background: #f7f7f7;}
-
-.close {
-    font-size: 50px;
-    display:block;
-    opacity: 1;
+#subscribeModal .modal-lg .top-strip {
+    height: 155px;
+}
+#subscribeModal .modal-lg .bottom-strip {
+    height: 155px;
 }
