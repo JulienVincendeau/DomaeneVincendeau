@@ -162,13 +162,24 @@
  <br><br>
 
  <!-- Modal -->
- <div class="modal fade text-center"  id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center"  id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
      <div class="modal-dialog modal-mg" role="document">
          <div class="modal-content">
              <div class="modal-body">
-                  <h3>Nouveau service ..</h3>
-                  <p style="background-color: rgba(255, 255, 255, 0.7); padding: 5px 5px 5px 5px;">
-                     <img src="images/Achetez votre vin Ici.png" alt="Service COVID : Call & Collect" class="imgPinBoot" style="width: 100%">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+                  <p class="pb-1 text-muted">
+                    <small>
+                      >>>
+                      <br>Envie de déguster nos vins pour Noël ?
+                      <br>Contactez-nous pour connaître nos cavistes partenaires dans votre ville ou prenez rendez-vous au Domäne et profitez de notre service Call & Collect
+                      <br>>>>
+                    </small>
+                  </p>
+
+                  <p style="background-color: rgba(255, 255, 255, 0.7);">
+                     <img src="images/Achetez votre vin Ici.png"
+                     alt="Service COVID-19 : Call & Collect - Nouveau service mise en place conforme aux restrictions sanitaires"
+                     class="imgPinBoot" style="width: 100%">
                    </p>
              </div>
          </div>
@@ -248,14 +259,14 @@
 
 <!--ouverture du Modal-->
 <script type="text/javascript">
-$(window).on('load', function() {
-	 setTimeout(function(){
-	   $('#subscribeModal').modal('show');
-   }, 1000);
-});
-$('#Reloadpage').click(function() {
-    location.reload();
-});
+  $(window).on('load', function() {
+  	 setTimeout(function(){
+  	   $('#subscribeModal').modal('show');
+     }, 1000);
+  });
+  setTimeout(function(){
+    $('#subscribeModal').modal('hide');
+  }, 9000);
 </script>
 
 

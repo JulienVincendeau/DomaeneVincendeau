@@ -5,6 +5,12 @@
 #subscribeModal .modal-lg .top-strip {
     height: 155px;
 }
+
 #subscribeModal .modal-lg .bottom-strip {
     height: 155px;
+}
+
+.close {
+    font-size: 40px;
+    display:block;
 }
