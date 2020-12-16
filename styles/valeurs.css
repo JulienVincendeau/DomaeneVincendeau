@@ -1,0 +1,14 @@
+.timeline {
+    position: relative;
+    padding:4px 0 0 0;
+    margin-top:22px;
+    list-style: none;
+}
+
+.img-responsive{
+  width: 75px;
+}
+
+.timeline-image{
+  text-align: end;
+}
