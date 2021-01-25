@@ -65,7 +65,7 @@ if($_POST["submit"]) {
 ?>
 
 <!doctype html>
-<html class="no-js" lang="fr-FR">
+<html class="no-js" lang="fr">
   <head>
       <meta charset="utf-8">
       <title>Domäne Night 2018</title>

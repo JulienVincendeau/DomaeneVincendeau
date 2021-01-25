@@ -66,7 +66,7 @@ if($_POST["submit"]) {
 ?>
 
 <!doctype html>
-<html class="no-js" lang="fr-FR">
+<html class="no-js" lang="fr">
   <head>
       <meta charset="utf-8">
       <title>Contacter le Dom&auml;ne Vincendeau</title>

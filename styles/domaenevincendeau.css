@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
 
 body{
-	font-family:'Open Sans', sans-serif;
+	font-family: 'Exo 2', sans-serif;
 	font-weight: normal;
 	background-color:white;
   color: #4c585d;
