@@ -30,6 +30,16 @@ $(function(){
     initlang='en';
   }
 
+  $('.en').css("display", "block");
+  if (initlang == "fr"){
+    $(".fr").css("display", "block");
+    $(".en").css("display", "none");
+  }
+  else{
+      $(".fr").css("display", "none");
+      $(".en").css("display", "block");
+  }
+
   $('.lang').each(function(index, element){
     console.log(initlang);
     $(this).text(arrLang[initlang][$(this).attr('key')]);

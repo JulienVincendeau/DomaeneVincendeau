@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
+.en, .fr { display:none; } /* hide all elements with a language class */
 
 body{
 	font-family: 'Exo 2', sans-serif;
