@@ -1,70 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="contact@domaenevincendeau.com";
-    $subject=$_POST["subject"];
-    $subjectMail="Contact-Site Web : ".$subject;
-    $subjectMailConfirmation="[Domäne Vincendeau] Votre message: [".$subject."] a bien été envoyé";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $headersConfirmation =  "From: Domäne Vincendeau<$recipient>" . "\r\n";
-    $headersConfirmation .= "Reply-to: ".$recipient. "\r\n";;
-    $headersConfirmation .= "MIME-Version: 1.0\r\n";
-    $headersConfirmation .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-    $headersConfirmation .= "Content-Type: image/jpeg; \r\n";
-
-	$mailBody="Nom: $sender\nEmail: $senderEmail\nObjet: $subject\n\n$message";
-
-    $mailBodyConfirmation ="
-		<html>
-		<head>
-		<meta charset=\"ISO-8859-1\">
-		<title>Domäne Vincendeau - Vins fins de Loire : Confirmation envoi message</title>
-
-		</head>
-
-		<body style=\"font-family: Open sans, monOpenSans; font-weight: normal; background-color: white; color:#009cac;\">
-			<br/><br/>
-			<table style=\" width: 710px;\">
-						<tr style=\"vertical-align: baseline;\">
-							<td style=\"padding: 10px;vertical-align: bottom;\">
-								<div >
-										Bonjour,<br/>
-										Merci de votre message. <br/>
-		    							Le Domäne Vincendeau vous apportera une réponse dans les meilleurs délais.<br/>
-		    							Sincères salutations,
-
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td style=\"padding: 10px;vertical-align: bottom;\">
-								<div>
-								<a href=\"http://www.domaenevincendeau.com\" style=\"bottom: 10px;text-decoration: none;\">
-									<img src=\"http://www.domaenevincendeau.com/images/logo-mail.png\"
-									alt=\"Domäne Vincendeau\" title=\"Domäne Vincendeau\"
-									style=\"height: 107px; border:none;\" />
-								</a>
-								</div>
-							</td>
-						</tr>
-					</table>
-		</body>
-		</html>
-    ";
-
-	mail($senderEmail, $subjectMailConfirmation, $mailBodyConfirmation, $headersConfirmation);
-
-    mail($recipient, $subjectMail, $mailBody, "From: $sender<$senderEmail>");
-
-
-    $thankYou="<p class='sectionCentreeFondBleu' style='left: -104px; width: 525px; font-size: 14px; position: relative;'>Votre demande a bien &eacute;t&eacute; prise en compte et un email de confirmation vient de vous &ecirc;tre adress&eacute; &agrave; : ".$senderEmail."<br/>Le Dom&auml;ne Vincendeau vous apportera une r&eacute;ponse dans les meilleurs d&eacute;lais.<br/>Merci de votre confiance ! </p>";
-}
-
-?>
-
 <!doctype html>
 <html class="no-js" lang="fr">
   <head>
@@ -209,24 +142,7 @@ if($_POST["submit"]) {
          <!-- <figcaption contenteditable="false" style="visibility: hidden;">Plan d'acc�s au Dom�ne Vincendeau</figcaption>-->
          </figure>
          </div>
-
-
-          <section id="thankyou" style="position: relative; z-index: 5; top: 0px;">
-                <?=$thankYou ?>
-          </section>
           <br/>
-          <section >
-          <article class="sectionCentree" style="position: relative; z-index: 5; top: 0px;">
-                  <form method="post" action="contact.php#thankyou">
-                    <fieldset  style="width:70%; border: none; ">
-                      <input type="text" required id="nom" name="sender"  placeholder="nom" /><br/>
-                      <input type="email" required id="nom" name="senderEmail"  placeholder="Adresse email" /><br/>
-                      <input type="text" required id="sujet" name="subject"  placeholder="sujet" /><br/>
-                      <textarea rows="" cols="" required id="message"   name="message" placeholder="message" ></textarea><br/>
-                      <input type="submit" name="submit" value="envoyer" />
-                    </fieldset>
-                  </form>
-          </article>
 
          </div>
          <div class="col col-xl-2 col-lg-2  col-sm-12  col-md-12  col-12" >
