@@ -48,7 +48,7 @@
       <!--Mon identité-->
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
 
-      <link rel="shortcut icon" href="images/favicon.ico" />
+      <link rel="shortcut icon" href="favicon.ico" />
 
 
       <!-- Spécificté de contat.php -->

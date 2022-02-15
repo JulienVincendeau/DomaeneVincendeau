@@ -118,7 +118,7 @@ if($_POST["submit"]) {
       <!--Mon identité-->
       <link rel="stylesheet" type="text/css" href="styles\domaenevincendeau.css" />
 
-      <link rel="shortcut icon" href="images/favicon.ico" />
+      <link rel="shortcut icon" href="favicon.ico" />
 
 
       <link rel="canonical" href="http://www.domaenevincendeau.com/event.html" />
